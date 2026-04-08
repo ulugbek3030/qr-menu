@@ -3,7 +3,7 @@ const LANGS = ['en', 'ru', 'uz', 'kk'];
 const LANG_LABELS = { en: 'EN', ru: 'RU', uz: 'UZ', kk: 'KZ' };
 const LANG_NAMES = { en: 'English', ru: 'Русский', uz: "O'zbek", kk: 'Қазақ' };
 
-let currentLang = localStorage.getItem(LANG_KEY) || 'en';
+let currentLang = localStorage.getItem(LANG_KEY) || 'ru';
 const listeners = [];
 
 const translations = {
