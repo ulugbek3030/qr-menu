@@ -7,6 +7,7 @@ import { renderMenu } from './views/menu.js';
 import { renderDish, cleanupDish } from './views/dish.js';
 import { renderCart } from './views/cart.js';
 import { renderPayment, cleanupPayment } from './views/payment.js';
+import { renderSearch } from './views/search.js';
 
 let menuData = null;
 let prevView = null;
@@ -117,12 +118,7 @@ async function init() {
         cleanup(); prevView = 'search';
         document.getElementById('app-header').style.display = '';
         document.getElementById('bottom-nav').style.display = '';
-        document.getElementById('app').innerHTML = `
-          <div class="px-5 py-20 text-center">
-            <span class="material-symbols-outlined text-5xl text-on-surface-variant/30 mb-3">search</span>
-            <h2 class="font-headline text-xl font-bold tracking-tighter text-on-surface mb-2">${t('nav.search')}</h2>
-            <p class="text-on-surface-variant text-sm">${t('app.coming_soon')}</p>
-          </div>`;
+        renderSearch(menuData); window.scrollTo(0, 0);
       }
     },
     {

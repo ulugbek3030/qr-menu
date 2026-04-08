@@ -121,6 +121,16 @@ const translations = {
 
     // Placeholder pages
     'app.coming_soon': 'Coming soon',
+
+    // Search
+    'search.placeholder': 'Search dishes...',
+    'search.no_results': 'No dishes found',
+    'search.found': 'found',
+    'search.browse': 'Browse by category',
+    'search.items': 'items',
+    'search.cat_kitchen': 'Kitchen',
+    'search.cat_bar': 'Bar',
+    'search.cat_hookah': 'Hookah',
   },
 
   ru: {
@@ -226,6 +236,15 @@ const translations = {
 
     'fmt.sum': 'сум',
     'app.coming_soon': 'Скоро',
+
+    'search.placeholder': 'Поиск блюд...',
+    'search.no_results': 'Блюда не найдены',
+    'search.found': 'найдено',
+    'search.browse': 'Категории',
+    'search.items': 'блюд',
+    'search.cat_kitchen': 'Кухня',
+    'search.cat_bar': 'Бар',
+    'search.cat_hookah': 'Кальян',
   },
 
   uz: {
@@ -331,6 +350,15 @@ const translations = {
 
     'fmt.sum': 'so\'m',
     'app.coming_soon': 'Tez kunda',
+
+    'search.placeholder': 'Taom qidirish...',
+    'search.no_results': 'Taom topilmadi',
+    'search.found': 'topildi',
+    'search.browse': 'Kategoriyalar',
+    'search.items': 'ta taom',
+    'search.cat_kitchen': 'Oshxona',
+    'search.cat_bar': 'Bar',
+    'search.cat_hookah': 'Qalyon',
   },
 
   kk: {
@@ -436,6 +464,15 @@ const translations = {
 
     'fmt.sum': 'сум',
     'app.coming_soon': 'Жақында',
+
+    'search.placeholder': 'Тағам іздеу...',
+    'search.no_results': 'Тағам табылмады',
+    'search.found': 'табылды',
+    'search.browse': 'Санаттар',
+    'search.items': 'тағам',
+    'search.cat_kitchen': 'Ас үй',
+    'search.cat_bar': 'Бар',
+    'search.cat_hookah': 'Кальян',
   }
 };
 
