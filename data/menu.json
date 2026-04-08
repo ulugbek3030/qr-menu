@@ -1,0 +1,181 @@
+{
+  "restaurant": {
+    "name": "Nocturnal Gallery",
+    "logo": "https://lh3.googleusercontent.com/aida/ADBb0ujssBhgNSKRERohu03xHQVfmusH0USqK8vAb_4EjFOk8U3IDCs7yXMV9jU9Hcra3pXkYwxsnvtjhRhHe14yuQPE-mUYw-4X4Fnk9EcgjVPZzV2mvx4SsIkP0l2HGPgsZyddEbnILA2AFrRheHqASnyAKsLopZ_qjl-yCvGqC51cQCvWOa7uyeuWI2f1owgdc6WNx0rS3dv4okYH8czeTSz0TAVogmC-ZmB37JYhDUXY0DDTdwLjm5Roe37bVyxts4hDUCfdVHsl",
+    "currency": "sum",
+    "taxRate": 0.10
+  },
+  "categories": [
+    { "id": "kitchen", "name": "Kitchen", "subtitle": "From the heart of our flame", "icon": "restaurant" },
+    { "id": "bar", "name": "Bar", "subtitle": "Mixology", "icon": "local_bar" },
+    { "id": "hookah", "name": "Hookah", "subtitle": "Experiences", "icon": "smoke_free" }
+  ],
+  "dishes": [
+    {
+      "id": "ribeye",
+      "category": "kitchen",
+      "name": "Dry Aged Ribeye with Truffle Oil",
+      "shortName": "Ribeye Steak",
+      "description": "28 days dry-aged, served with bone marrow truffle oil and smoked sea salt.",
+      "price": 64000,
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDyfxGver7tjKIXg1lUnFusA1XcCvYHqCou6m1yaVo7YiFuRs8-SnxjpfDbSOMPtDzCPlhp-3Kk2wDE85fpEhWyvCJ78WX6M6uEI4wfcBkZLnnZVJdqMLRZeNE3yayoN_JOUYWfPd7rrzlYVE-eYzfTIQNkGXuQvqx294KP2DYdegNR-eBevNk6-IcCHmtNrFS5bhQ7e7F6W3K_b5aaSKXvxpujPYIIiH2hS0OsEfuaCm06aSvn8mHI-AfANT1qgEOC9eWzuCo43w",
+      "rating": 4.9,
+      "calories": 720,
+      "protein": 55,
+      "carbs": 8,
+      "ingredients": ["Dry-Aged Ribeye", "Truffle Oil", "Bone Marrow", "Smoked Sea Salt"],
+      "badges": ["Chef's Choice"],
+      "tags": ["popular", "specials"],
+      "reviews": [
+        { "name": "Julian Vance", "role": "Platinum Member", "rating": 5, "text": "The marbling was magnificent. Meat literally melts in your mouth.", "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuClplx66-fPU3WGZvir647ZM4ixVbcEqAjA0bTHw8giWJQquRDAGSB_EU3NZFDYeldaF1oz0b_jCPORl5XgIN3usHdO_CK35JfDHt9DDNAFah1Vqp_gXn86jynX8q8mPyb0CiU2ogsC9F_nbZ_mDHC-RhMQJDF4GzEMvrrPf79eCEZpUaFkA2iLQ7NfjZw3R5Q0Q49efFX0fyxNRJP2N8nB9hDuOOwYYhHWeC9HMFoHqOpf2iORLYaJStzN9Qs4ajeCTqY61MHIXA" }
+      ]
+    },
+    {
+      "id": "wagyu",
+      "category": "kitchen",
+      "name": "Reserve Wagyu with Black Truffle",
+      "shortName": "Wagyu Truffle",
+      "description": "48-hour slow-cooked Wagyu beef, finished over binchotan coals, glazed with aged balsamic and Perigord truffle.",
+      "price": 128000,
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDtwk7UitVlB2SmqIFmlTgsyOa4lQdXb0aXRVlh8AfZPZtjGPtG7E9q3csWPpPOx1SKY-mAgqCxtOMQMXQjrURh2v2nUzXlT2jszYOzB0qtPwS1eXm5E9PosHcCJiWTXwDELMH0hbYW7msjxlhnRmNNrCh-qKZt3Ov5BdHGLSvz68V_eOHBVe_UHezck1n2lwDdbLCdDgW6AXJ2VwTtxZxDkF_XJs2qhmDtqEP22cESoXPNbO7rHdOwTHczl2UP78Mt2qBd_P5qKg",
+      "rating": 4.9,
+      "calories": 640,
+      "protein": 42,
+      "carbs": 18,
+      "ingredients": ["Wagyu A5 Miyazaki", "Fresh Perigord Truffle", "Smoked Bone Marrow", "Fermented Garlic Purée"],
+      "badges": ["Signature Dish"],
+      "tags": ["popular", "specials", "healthy"],
+      "reviews": [
+        { "name": "Julian Vance", "role": "Platinum Member", "rating": 5, "text": "The marbling of the wagyu was magnificent. The meat literally melts in your mouth.", "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuClplx66-fPU3WGZvir647ZM4ixVbcEqAjA0bTHw8giWJQquRDAGSB_EU3NZFDYeldaF1oz0b_jCPORl5XgIN3usHdO_CK35JfDHt9DDNAFah1Vqp_gXn86jynX8q8mPyb0CiU2ogsC9F_nbZ_mDHC-RhMQJDF4GzEMvrrPf79eCEZpUaFkA2iLQ7NfjZw3R5Q0Q49efFX0fyxNRJP2N8nB9hDuOOwYYhHWeC9HMFoHqOpf2iORLYaJStzN9Qs4ajeCTqY61MHIXA" },
+        { "name": "Elena Rossi", "role": "Verified Gourmet", "rating": 5, "text": "Simply the best beef I've had outside of Kyoto. Expensive, but worth every cent.", "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuB9yPIItncBWwpROo1G-3cjs5mSRPBrJTHlAN7Z1cUQPrPfcmn6VlMD9CSs9v5aAxyrPQ98ZlDnZjCm3LJQcvRPpII_ibJKo3SICxK2gyw8aHYWthcGlIilp6n14Lk_b5e3k1uwvqrcG4wuNQSobE7JqYkg1vynSVo4elBP9Yv0OrsMK94UoGwGSqMqQGDPBI4-HTAkt1TooxZhBdEZyK2z3WMCDlWWsR4G8xTX09hRlxGcMxTAuJ4ntrihqszsCYczFdauSRHQ1Q" },
+        { "name": "Marcus Chen", "role": "Food Critic", "rating": 4, "text": "Bold, smoky, and decadent. The garlic purée slightly overpowered the delicate meat.", "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuAm87e0qZMge7S2Nbua6cSDOt9kqsiQh1hXhL7OP5lcjEQDeZqsKOk7hMCIH8WWG2wJDXHRJJd2zXJebO7mLYpY4Vwkm-ZRsnhHa0OA-hxwj801BuY83eziJNiOHsCwZ0RIYsbCVUVQrAMKbhD4-4bytxTH06sPqCiRA4s2A6po-UrXVC-7_FlmmJT3tADfMqP7NyEGzkfwaENvydHW_vftyw9KPbFnjFIrJjwtpTK0F3mY_Ju76FbOV5QbPb-OMQeHLHSjdRvFGg" }
+      ]
+    },
+    {
+      "id": "tagliatelle",
+      "category": "kitchen",
+      "name": "Truffle Tagliatelle",
+      "shortName": "Truffle Tagliatelle",
+      "description": "Handmade pasta in a rich Parmigiano-Reggiano cream with shavings of seasonal black truffle.",
+      "price": 42000,
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuC7dy4AEnkmKcAgVhjO0qWFVkTB5r-Okvl5Qc8wNcSy8NyviKMyr-gQmd6tMSw100IDIrO6W11wMsqL2mkaVs1osecYRuEiNQ-Wa5D59_hBbVZ1l2u052RiQbyHl-JPXjHYbXpV6VkzrMfpNVzV2_x9oZkE-4toFW_X-qrhg4XFGf4cOCHZgvRmwflVf5jJyNCTQleAyNW_E4h5tA_X9J0oQOHVfyBdtSPSx-TEm42rXrunn-zHuBkV8GkzDtmzsoaUXWJ2kwE5Lw",
+      "rating": 4.9,
+      "calories": 520,
+      "protein": 18,
+      "carbs": 62,
+      "ingredients": ["Handmade Pasta", "Parmigiano-Reggiano", "Black Truffle", "Cream Sauce"],
+      "badges": [],
+      "tags": ["popular", "new"],
+      "reviews": [
+        { "name": "Elena Rossi", "role": "Verified Gourmet", "rating": 5, "text": "Perfectly al dente. The truffle aroma is intoxicating.", "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuB9yPIItncBWwpROo1G-3cjs5mSRPBrJTHlAN7Z1cUQPrPfcmn6VlMD9CSs9v5aAxyrPQ98ZlDnZjCm3LJQcvRPpII_ibJKo3SICxK2gyw8aHYWthcGlIilp6n14Lk_b5e3k1uwvqrcG4wuNQSobE7JqYkg1vynSVo4elBP9Yv0OrsMK94UoGwGSqMqQGDPBI4-HTAkt1TooxZhBdEZyK2z3WMCDlWWsR4G8xTX09hRlxGcMxTAuJ4ntrihqszsCYczFdauSRHQ1Q" }
+      ]
+    },
+    {
+      "id": "lamb",
+      "category": "kitchen",
+      "name": "Braised Lamb Shank",
+      "shortName": "Lamb Shank",
+      "description": "Slow-cooked for 12 hours in a red wine reduction, served with roasted root vegetables.",
+      "price": 32000,
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDU_LuCv5SNZlqxyKVAQOqpc9tA6JvJuQDMqa4QbqP1UkA4pSrQM8nITjx4raLYZKghBY2MtiLonNd07ind1nAQTaJYAvBl_mN_B_Ux7CWVmcWyMTDcguL_n3CpF9CGQChPqGp6u261j27SWf5u5nfysLfbhg-fhphWjY--7wgf10JdvDsKAlDy039IN2R0_0LVfrNUlqYgAxeybnDDGHw2N3r6vZX8y2trtaYf1QK7m4RXjdyu8Qidslg4-VSzPxExAu6kV86uXA",
+      "rating": 4.7,
+      "calories": 580,
+      "protein": 45,
+      "carbs": 22,
+      "ingredients": ["Lamb Shank", "Red Wine", "Root Vegetables", "Rosemary"],
+      "badges": [],
+      "tags": ["popular"],
+      "reviews": []
+    },
+    {
+      "id": "salmon",
+      "category": "kitchen",
+      "name": "Wild Salmon",
+      "shortName": "Wild Salmon",
+      "description": "Ecologically clean salmon, seared to perfection, with a vibrant lemon-caper beurre blanc and grilled asparagus.",
+      "price": 38000,
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDOjU4Qs5Eu3PfLhIlxoL99SZyJDj33eHdgPwGLS1DF3McUqNPr68XQOZBMYqhZRbKnHxtsAR_Y0WXmXulFkaOuiBCgwo7tAXwRLavrJoHc_dSxMBZGVjlSIpgQqB3Lr22PAzFYPPPWZpiftWv8F7dO2a016h4Ma_hSOf6Bb5xDkUpB4oKQkEzGZw6JHvM8UHpFraIneSGykHu4Pc1y-KUzZ6wlSwt2lXHqX0_BmBbdCDXd4qKeO0MHBaG1BYcY_and_WC0RzrkIg",
+      "rating": 4.8,
+      "calories": 380,
+      "protein": 38,
+      "carbs": 12,
+      "ingredients": ["Wild Salmon", "Lemon-Caper Sauce", "Grilled Asparagus", "Beurre Blanc"],
+      "badges": [],
+      "tags": ["healthy", "popular"],
+      "reviews": []
+    },
+    {
+      "id": "ganache",
+      "category": "kitchen",
+      "name": "Golden Ganache",
+      "shortName": "Golden Ganache",
+      "description": "24-karat edible gold leaf, 70% dark Belgian cocoa, smoked sea salt, and velvety raspberry coulis.",
+      "price": 28000,
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBkicLv2B8qM5NWGLQOhLDNOz__eaVp3csxwnPq3VE_YiAOxAuA4HnixDcK7PUGTwlV8JsnOeDAm8LGZi-hLlEjwPj0PkQffvp7OzrYoV8gYPgyGBBXBwbOJWlAq0hyAZ_IBiJjQVp7hpeiIuX5IcYKPbfu0id9fox-G2Utq0n3LXPkmceT1KJkMBjMpbc_0XaNDN0aFvM4kF-5G1WIYDaG_AgW8wTyNhBJy-hMwhWwiVsqIcy-XgQvc-3BG8KxPnu6X0KjpzZ16Q",
+      "rating": 4.6,
+      "calories": 420,
+      "protein": 6,
+      "carbs": 48,
+      "ingredients": ["Belgian Cocoa 70%", "Edible Gold Leaf", "Smoked Sea Salt", "Raspberry Coulis"],
+      "badges": ["Signature Dish"],
+      "tags": ["specials"],
+      "reviews": []
+    },
+    {
+      "id": "midnight-botanist",
+      "category": "bar",
+      "name": "Midnight Botanist",
+      "shortName": "Midnight Botanist",
+      "description": "A sophisticated dark red cocktail in a crystal coupe glass with a single large ice cube and citrus peel.",
+      "price": 22000,
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCOk8Z9KPcLsLd8ESSToymYpLkGEUdFy_az0qPzYOFKi2M9g2iSX_kc8jxeSsvYFmZIY0gL1ttqNIbCO8nFEPXgGuo5Jpw4D0YrHlkumTfKse5ERzdetY6d4SNLmItp8cBslZK51Opepdh98w4sk_SXCRyVRN1UZxoLGj7gX1sloVQ4DhufcXRW5kPLYzQqOC29fPxyYAnb8ukOR7Ur3x_RsJWxI_XwD1iI5KcVLMTxk36R7CcAqAc_TIP183eYpx035OPs-Rn8_A",
+      "rating": 4.7,
+      "calories": 180,
+      "protein": 0,
+      "carbs": 22,
+      "ingredients": ["Premium Gin", "Elderflower", "Citrus Peel", "Artisan Bitters"],
+      "badges": ["Seasonal Drink"],
+      "tags": ["popular", "specials"],
+      "reviews": []
+    },
+    {
+      "id": "alchemist-brew",
+      "category": "bar",
+      "name": "Alchemist's Brew",
+      "shortName": "Alchemist's Brew",
+      "description": "Aged bourbon, smoked cedar infusion, artisan orange bitters.",
+      "price": 24000,
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDn3upX96m5-_tZZG0kwfGs2YQrVD3dTV302nA8dbigTVmf_qof7kz4Ci8Z4GV19Ay6EP4n-PYzw9BNXrQXXU5XkBvrGfYA4ogrw52ki3al5bjxai67fDgNlXE3jAUcJNYh8NDqh8R1p3MyqF07PzSMmTk7cPboHFoV5cWb1SdeAHdrvvWPEsMLpgNSJhzI0AEKE7JJ6uyy3HQyN79Gf-5BGsTwWQ1QIEnqymMu14IMOREdLrL3jN07sq2tz9Mx4bj_24L-7CiQkA",
+      "rating": 4.5,
+      "calories": 210,
+      "protein": 0,
+      "carbs": 18,
+      "ingredients": ["Aged Bourbon", "Smoked Cedar", "Orange Bitters", "Honey Syrup"],
+      "badges": [],
+      "tags": ["popular"],
+      "reviews": []
+    },
+    {
+      "id": "hookah-classic",
+      "category": "hookah",
+      "name": "Classic Premium Blend",
+      "shortName": "Classic Blend",
+      "description": "Hand-selected premium tobacco with notes of double apple and fresh mint.",
+      "price": 28000,
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBswGPMaKvmRVMiCXnMBG31BV7-inzaIk7L-bGC2YTan_N6MON8eRYCjtKbns7y3WOzI-eTs2sbcZG3bC2D5ujOB0ogdie3H8LqVrWE9CBjCw3SnYyDzgXEXmCvnyX4_UGXoML0YjvJqZauoPucSOVaXtUS3lYauGDPetGAby3hoLyRpR90MWdeC_3AG6MOVXVtSyydQq07uaUN2jx7fn6J-TYpbz58JJm-_Xf73An98_A3JoUyut9tXdN8rARc9OP02q8Aez_d2g",
+      "rating": 4.6,
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "ingredients": ["Premium Tobacco", "Double Apple", "Fresh Mint", "Natural Charcoal"],
+      "badges": [],
+      "tags": ["popular"],
+      "reviews": []
+    }
+  ],
+  "categoryImages": {
+    "kitchen": "https://lh3.googleusercontent.com/aida-public/AB6AXuDyfxGver7tjKIXg1lUnFusA1XcCvYHqCou6m1yaVo7YiFuRs8-SnxjpfDbSOMPtDzCPlhp-3Kk2wDE85fpEhWyvCJ78WX6M6uEI4wfcBkZLnnZVJdqMLRZeNE3yayoN_JOUYWfPd7rrzlYVE-eYzfTIQNkGXuQvqx294KP2DYdegNR-eBevNk6-IcCHmtNrFS5bhQ7e7F6W3K_b5aaSKXvxpujPYIIiH2hS0OsEfuaCm06aSvn8mHI-AfANT1qgEOC9eWzuCo43w",
+    "bar": "https://lh3.googleusercontent.com/aida-public/AB6AXuDFeLiZTRT9V_Gv6H6uyPt9EWjvN1JEzv1tKulc0HpLWNOk_EdXS0AjLxdP63LsimQ2OzaKKuN83BGcnQN8fB-BMFIqGvAPu-jTtwjTBrLKjof9VB0_uTqgTWoD75m9g1OPE8BJnXIXp0gELa9InZlIswc6WkV_bNKjtzc1x4BPjrCV183TrKADuSSNtgxNh9YRkLJpYJq42le3f7Zm1VAVvnp3pS3q7U4P6e1MEm8m3ZQ_Z4YY4SY9UkkNcuaIiG1GKCLALsgLMQ",
+    "hookah": "https://lh3.googleusercontent.com/aida-public/AB6AXuBswGPMaKvmRVMiCXnMBG31BV7-inzaIk7L-bGC2YTan_N6MON8eRYCjtKbns7y3WOzI-eTs2sbcZG3bC2D5ujOB0ogdie3H8LqVrWE9CBjCw3SnYyDzgXEXmCvnyX4_UGXoML0YjvJqZauoPucSOVaXtUS3lYauGDPetGAby3hoLyRpR90MWdeC_3AG6MOVXVtSyydQq07uaUN2jx7fn6J-TYpbz58JJm-_Xf73An98_A3JoUyut9tXdN8rARc9OP02q8Aez_d2g"
+  }
+}
