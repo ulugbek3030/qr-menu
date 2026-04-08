@@ -18,9 +18,9 @@
       "shortName": "Ribeye Steak",
       "description": "28 days dry-aged, served with bone marrow truffle oil and smoked sea salt.",
       "_t": {
-        "ru": { "name": "Рибай сухой выдержки с трюфельным маслом", "shortName": "Стейк Рибай", "description": "28 дней сухой выдержки, подаётся с трюфельным маслом из костного мозга и копчёной морской солью." },
-        "uz": { "name": "Quritilgan Ribay tryufel moyi bilan", "shortName": "Ribay Steyk", "description": "28 kun quritilgan, suyak iligi tryufel moyi va dudlangan dengiz tuzi bilan." },
-        "kk": { "name": "Құрғақ піскен Рибай трюфель майымен", "shortName": "Рибай стейк", "description": "28 күн құрғақ пісірілген, сүйек кемігі трюфель майы және ыстықталған теңіз тұзымен." }
+        "ru": { "name": "Рибай сухой выдержки с трюфельным маслом", "shortName": "Стейк Рибай", "description": "28 дней сухой выдержки, подаётся с трюфельным маслом из костного мозга и копчёной морской солью.", "ingredients": ["Рибай сухой выдержки", "Трюфельное масло", "Костный мозг", "Копчёная морская соль"] },
+        "uz": { "name": "Quritilgan Ribay tryufel moyi bilan", "shortName": "Ribay Steyk", "description": "28 kun quritilgan, suyak iligi tryufel moyi va dudlangan dengiz tuzi bilan.", "ingredients": ["Quritilgan Ribay", "Tryufel moyi", "Suyak iligi", "Dudlangan dengiz tuzi"] },
+        "kk": { "name": "Құрғақ піскен Рибай трюфель майымен", "shortName": "Рибай стейк", "description": "28 күн құрғақ пісірілген, сүйек кемігі трюфель майы және ыстықталған теңіз тұзымен.", "ingredients": ["Құрғақ піскен Рибай", "Трюфель майы", "Сүйек кемігі", "Ыстықталған теңіз тұзы"] }
       },
       "price": 64000,
       "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDyfxGver7tjKIXg1lUnFusA1XcCvYHqCou6m1yaVo7YiFuRs8-SnxjpfDbSOMPtDzCPlhp-3Kk2wDE85fpEhWyvCJ78WX6M6uEI4wfcBkZLnnZVJdqMLRZeNE3yayoN_JOUYWfPd7rrzlYVE-eYzfTIQNkGXuQvqx294KP2DYdegNR-eBevNk6-IcCHmtNrFS5bhQ7e7F6W3K_b5aaSKXvxpujPYIIiH2hS0OsEfuaCm06aSvn8mHI-AfANT1qgEOC9eWzuCo43w",
@@ -42,9 +42,9 @@
       "shortName": "Wagyu Truffle",
       "description": "48-hour slow-cooked Wagyu beef, finished over binchotan coals, glazed with aged balsamic and Perigord truffle.",
       "_t": {
-        "ru": { "name": "Резервное вагю с чёрным трюфелем", "shortName": "Вагю Трюфель", "description": "48 часов медленного приготовления, на углях бинтётан, с выдержанным бальзамиком и перигорским трюфелем." },
-        "uz": { "name": "Rezerv Vagyu qora tryufel bilan", "shortName": "Vagyu Tryufel", "description": "48 soat sekin pishirilgan Vagyu go'shti, bintyotan ko'mirida, yetiltirilgan balzamik va Perigor tryufeli bilan." },
-        "kk": { "name": "Резервтік Вагю қара трюфельмен", "shortName": "Вагю Трюфель", "description": "48 сағат баяу пісірілген Вагю еті, бинтётан көмірінде, ескі бальзамик және Перигор трюфелімен." }
+        "ru": { "name": "Резервное вагю с чёрным трюфелем", "shortName": "Вагю Трюфель", "description": "48 часов медленного приготовления, на углях бинтётан, с выдержанным бальзамиком и перигорским трюфелем.", "ingredients": ["Вагю A5 Миядзаки", "Свежий перигорский трюфель", "Копчёный костный мозг", "Ферментированное чесночное пюре"] },
+        "uz": { "name": "Rezerv Vagyu qora tryufel bilan", "shortName": "Vagyu Tryufel", "description": "48 soat sekin pishirilgan Vagyu go'shti, bintyotan ko'mirida, yetiltirilgan balzamik va Perigor tryufeli bilan.", "ingredients": ["Vagyu A5 Miyazaki", "Yangi Perigor tryufeli", "Dudlangan suyak iligi", "Fermentlangan sarimsoq pyuresi"] },
+        "kk": { "name": "Резервтік Вагю қара трюфельмен", "shortName": "Вагю Трюфель", "description": "48 сағат баяу пісірілген Вагю еті, бинтётан көмірінде, ескі бальзамик және Перигор трюфелімен.", "ingredients": ["Вагю A5 Миядзаки", "Жаңа Перигор трюфелі", "Ыстықталған сүйек кемігі", "Ферменттелген сарымсақ пюресі"] }
       },
       "price": 128000,
       "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDtwk7UitVlB2SmqIFmlTgsyOa4lQdXb0aXRVlh8AfZPZtjGPtG7E9q3csWPpPOx1SKY-mAgqCxtOMQMXQjrURh2v2nUzXlT2jszYOzB0qtPwS1eXm5E9PosHcCJiWTXwDELMH0hbYW7msjxlhnRmNNrCh-qKZt3Ov5BdHGLSvz68V_eOHBVe_UHezck1n2lwDdbLCdDgW6AXJ2VwTtxZxDkF_XJs2qhmDtqEP22cESoXPNbO7rHdOwTHczl2UP78Mt2qBd_P5qKg",
@@ -68,9 +68,9 @@
       "shortName": "Truffle Tagliatelle",
       "description": "Handmade pasta in a rich Parmigiano-Reggiano cream with shavings of seasonal black truffle.",
       "_t": {
-        "ru": { "name": "Тальятелле с трюфелем", "shortName": "Тальятелле", "description": "Паста ручной работы в сливочном соусе Пармиджано-Реджано с чёрным трюфелем." },
-        "uz": { "name": "Tryufelli Talyatelle", "shortName": "Talyatelle", "description": "Qo'lda tayyorlangan makaron Parmijano-Rejano kremida, qora tryufel bilan." },
-        "kk": { "name": "Трюфельді Тальятелле", "shortName": "Тальятелле", "description": "Қолмен жасалған макарон Парміджано-Реджано кремінде, қара трюфельмен." }
+        "ru": { "name": "Тальятелле с трюфелем", "shortName": "Тальятелле", "description": "Паста ручной работы в сливочном соусе Пармиджано-Реджано с чёрным трюфелем.", "ingredients": ["Паста ручной работы", "Пармиджано-Реджано", "Чёрный трюфель", "Сливочный соус"] },
+        "uz": { "name": "Tryufelli Talyatelle", "shortName": "Talyatelle", "description": "Qo'lda tayyorlangan makaron Parmijano-Rejano kremida, qora tryufel bilan.", "ingredients": ["Qo'lda tayyorlangan makaron", "Parmijano-Rejano", "Qora tryufel", "Krem sous"] },
+        "kk": { "name": "Трюфельді Тальятелле", "shortName": "Тальятелле", "description": "Қолмен жасалған макарон Парміджано-Реджано кремінде, қара трюфельмен.", "ingredients": ["Қолмен жасалған макарон", "Парміджано-Реджано", "Қара трюфель", "Кремді соус"] }
       },
       "price": 42000,
       "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuC7dy4AEnkmKcAgVhjO0qWFVkTB5r-Okvl5Qc8wNcSy8NyviKMyr-gQmd6tMSw100IDIrO6W11wMsqL2mkaVs1osecYRuEiNQ-Wa5D59_hBbVZ1l2u052RiQbyHl-JPXjHYbXpV6VkzrMfpNVzV2_x9oZkE-4toFW_X-qrhg4XFGf4cOCHZgvRmwflVf5jJyNCTQleAyNW_E4h5tA_X9J0oQOHVfyBdtSPSx-TEm42rXrunn-zHuBkV8GkzDtmzsoaUXWJ2kwE5Lw",
@@ -92,9 +92,9 @@
       "shortName": "Lamb Shank",
       "description": "Slow-cooked for 12 hours in a red wine reduction, served with roasted root vegetables.",
       "_t": {
-        "ru": { "name": "Томлёная баранья голяшка", "shortName": "Баранья голяшка", "description": "12 часов медленного приготовления в соусе из красного вина с жареными корнеплодами." },
-        "uz": { "name": "Dimlanmagan qo'y boldir", "shortName": "Qo'y boldir", "description": "12 soat qizil vino sosida sekin pishirilgan, qovurilgan ildiz sabzavotlar bilan." },
-        "kk": { "name": "Бұқтырылған қой саны", "shortName": "Қой саны", "description": "12 сағат қызыл шарап тұздығында баяу пісірілген, қуырылған тамыр көкөністермен." }
+        "ru": { "name": "Томлёная баранья голяшка", "shortName": "Баранья голяшка", "description": "12 часов медленного приготовления в соусе из красного вина с жареными корнеплодами.", "ingredients": ["Баранья голяшка", "Красное вино", "Корнеплоды", "Розмарин"] },
+        "uz": { "name": "Dimlanmagan qo'y boldir", "shortName": "Qo'y boldir", "description": "12 soat qizil vino sosida sekin pishirilgan, qovurilgan ildiz sabzavotlar bilan.", "ingredients": ["Qo'y boldir", "Qizil vino", "Ildiz sabzavotlar", "Rozmarin"] },
+        "kk": { "name": "Бұқтырылған қой саны", "shortName": "Қой саны", "description": "12 сағат қызыл шарап тұздығында баяу пісірілген, қуырылған тамыр көкөністермен.", "ingredients": ["Қой саны", "Қызыл шарап", "Тамыр көкөністер", "Розмарин"] }
       },
       "price": 32000,
       "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDU_LuCv5SNZlqxyKVAQOqpc9tA6JvJuQDMqa4QbqP1UkA4pSrQM8nITjx4raLYZKghBY2MtiLonNd07ind1nAQTaJYAvBl_mN_B_Ux7CWVmcWyMTDcguL_n3CpF9CGQChPqGp6u261j27SWf5u5nfysLfbhg-fhphWjY--7wgf10JdvDsKAlDy039IN2R0_0LVfrNUlqYgAxeybnDDGHw2N3r6vZX8y2trtaYf1QK7m4RXjdyu8Qidslg4-VSzPxExAu6kV86uXA",
@@ -114,9 +114,9 @@
       "shortName": "Wild Salmon",
       "description": "Ecologically clean salmon, seared to perfection, with a vibrant lemon-caper beurre blanc and grilled asparagus.",
       "_t": {
-        "ru": { "name": "Дикий лосось", "shortName": "Дикий лосось", "description": "Экологически чистый лосось, обжаренный до совершенства, с соусом бёр-блан и спаржей." },
-        "uz": { "name": "Yovvoyi losos", "shortName": "Yovvoyi losos", "description": "Ekologik toza losos, mukammal qovurilgan, limon-kaper byor-blan va grillangan sparjа bilan." },
-        "kk": { "name": "Жабайы лосось", "shortName": "Жабайы лосось", "description": "Экологиялық таза лосось, мінсіз қуырылған, лимон-капер бёр-блан және гриль спаржамен." }
+        "ru": { "name": "Дикий лосось", "shortName": "Дикий лосось", "description": "Экологически чистый лосось, обжаренный до совершенства, с соусом бёр-блан и спаржей.", "ingredients": ["Дикий лосось", "Лимонно-каперсный соус", "Спаржа на гриле", "Соус бёр-блан"] },
+        "uz": { "name": "Yovvoyi losos", "shortName": "Yovvoyi losos", "description": "Ekologik toza losos, mukammal qovurilgan, limon-kaper byor-blan va grillangan sparjа bilan.", "ingredients": ["Yovvoyi losos", "Limon-kaper sousi", "Grillangan sparja", "Byor-blan sousi"] },
+        "kk": { "name": "Жабайы лосось", "shortName": "Жабайы лосось", "description": "Экологиялық таза лосось, мінсіз қуырылған, лимон-капер бёр-блан және гриль спаржамен.", "ingredients": ["Жабайы лосось", "Лимон-капер соусы", "Гриль спаржа", "Бёр-блан соусы"] }
       },
       "price": 38000,
       "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDOjU4Qs5Eu3PfLhIlxoL99SZyJDj33eHdgPwGLS1DF3McUqNPr68XQOZBMYqhZRbKnHxtsAR_Y0WXmXulFkaOuiBCgwo7tAXwRLavrJoHc_dSxMBZGVjlSIpgQqB3Lr22PAzFYPPPWZpiftWv8F7dO2a016h4Ma_hSOf6Bb5xDkUpB4oKQkEzGZw6JHvM8UHpFraIneSGykHu4Pc1y-KUzZ6wlSwt2lXHqX0_BmBbdCDXd4qKeO0MHBaG1BYcY_and_WC0RzrkIg",
@@ -136,9 +136,9 @@
       "shortName": "Golden Ganache",
       "description": "24-karat edible gold leaf, 70% dark Belgian cocoa, smoked sea salt, and velvety raspberry coulis.",
       "_t": {
-        "ru": { "name": "Золотой Ганаш", "shortName": "Золотой Ганаш", "description": "Съедобное золото 24 карата, 70% бельгийский какао, копчёная морская соль и малиновый кули." },
-        "uz": { "name": "Oltin Ganash", "shortName": "Oltin Ganash", "description": "24 karatli iste'mol oltin yaproq, 70% Belgiya kakao, dudlangan dengiz tuzi va malina kulisi." },
-        "kk": { "name": "Алтын Ганаш", "shortName": "Алтын Ганаш", "description": "24 караттық жеуге жарамды алтын жапырақ, 70% бельгиялық какао, ыстықталған теңіз тұзы және таңқурай кулисі." }
+        "ru": { "name": "Золотой Ганаш", "shortName": "Золотой Ганаш", "description": "Съедобное золото 24 карата, 70% бельгийский какао, копчёная морская соль и малиновый кули.", "ingredients": ["Бельгийское какао 70%", "Съедобное золото", "Копчёная морская соль", "Малиновый кули"] },
+        "uz": { "name": "Oltin Ganash", "shortName": "Oltin Ganash", "description": "24 karatli iste'mol oltin yaproq, 70% Belgiya kakao, dudlangan dengiz tuzi va malina kulisi.", "ingredients": ["Belgiya kakao 70%", "Iste'mol oltin yaproq", "Dudlangan dengiz tuzi", "Malina kulisi"] },
+        "kk": { "name": "Алтын Ганаш", "shortName": "Алтын Ганаш", "description": "24 караттық жеуге жарамды алтын жапырақ, 70% бельгиялық какао, ыстықталған теңіз тұзы және таңқурай кулисі.", "ingredients": ["Бельгиялық какао 70%", "Жеуге жарамды алтын", "Ыстықталған теңіз тұзы", "Таңқурай кулисі"] }
       },
       "price": 28000,
       "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBkicLv2B8qM5NWGLQOhLDNOz__eaVp3csxwnPq3VE_YiAOxAuA4HnixDcK7PUGTwlV8JsnOeDAm8LGZi-hLlEjwPj0PkQffvp7OzrYoV8gYPgyGBBXBwbOJWlAq0hyAZ_IBiJjQVp7hpeiIuX5IcYKPbfu0id9fox-G2Utq0n3LXPkmceT1KJkMBjMpbc_0XaNDN0aFvM4kF-5G1WIYDaG_AgW8wTyNhBJy-hMwhWwiVsqIcy-XgQvc-3BG8KxPnu6X0KjpzZ16Q",
@@ -158,9 +158,9 @@
       "shortName": "Midnight Botanist",
       "description": "A sophisticated dark red cocktail in a crystal coupe glass with a single large ice cube and citrus peel.",
       "_t": {
-        "ru": { "name": "Полуночный Ботаник", "shortName": "Полуночный Ботаник", "description": "Изысканный тёмно-красный коктейль в хрустальном бокале с крупным кубиком льда и цитрусовой цедрой." },
-        "uz": { "name": "Tunkugi Botanik", "shortName": "Tunkugi Botanik", "description": "Kristall stakandagi nafis qizil kokteyl, yirik muz bo'lagi va tsitrus po'sti bilan." },
-        "kk": { "name": "Түнгі Ботаник", "shortName": "Түнгі Ботаник", "description": "Хрусталь бокалдағы талғампаз қызыл коктейль, ірі мұз кесегі және цитрус қабығымен." }
+        "ru": { "name": "Полуночный Ботаник", "shortName": "Полуночный Ботаник", "description": "Изысканный тёмно-красный коктейль в хрустальном бокале с крупным кубиком льда и цитрусовой цедрой.", "ingredients": ["Премиальный джин", "Бузина", "Цитрусовая цедра", "Ремесленный биттер"] },
+        "uz": { "name": "Tunkugi Botanik", "shortName": "Tunkugi Botanik", "description": "Kristall stakandagi nafis qizil kokteyl, yirik muz bo'lagi va tsitrus po'sti bilan.", "ingredients": ["Premium jin", "Oqchechak", "Tsitrus po'sti", "Hunarmand bitter"] },
+        "kk": { "name": "Түнгі Ботаник", "shortName": "Түнгі Ботаник", "description": "Хрусталь бокалдағы талғампаз қызыл коктейль, ірі мұз кесегі және цитрус қабығымен.", "ingredients": ["Премиум джин", "Ақ гүл", "Цитрус қабығы", "Қолөнер биттері"] }
       },
       "price": 22000,
       "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCOk8Z9KPcLsLd8ESSToymYpLkGEUdFy_az0qPzYOFKi2M9g2iSX_kc8jxeSsvYFmZIY0gL1ttqNIbCO8nFEPXgGuo5Jpw4D0YrHlkumTfKse5ERzdetY6d4SNLmItp8cBslZK51Opepdh98w4sk_SXCRyVRN1UZxoLGj7gX1sloVQ4DhufcXRW5kPLYzQqOC29fPxyYAnb8ukOR7Ur3x_RsJWxI_XwD1iI5KcVLMTxk36R7CcAqAc_TIP183eYpx035OPs-Rn8_A",
@@ -180,9 +180,9 @@
       "shortName": "Alchemist's Brew",
       "description": "Aged bourbon, smoked cedar infusion, artisan orange bitters.",
       "_t": {
-        "ru": { "name": "Эликсир Алхимика", "shortName": "Эликсир Алхимика", "description": "Выдержанный бурбон, копчёный кедр и ремесленный апельсиновый биттер." },
-        "uz": { "name": "Alkimyogar Eliksiri", "shortName": "Alkimyogar Eliksiri", "description": "Yetiltirilgan burbon, dudlangan sadr daraxti va hunarmand apelsin bitteri." },
-        "kk": { "name": "Алхимик Эликсирі", "shortName": "Алхимик Эликсирі", "description": "Жетілдірілген бурбон, ыстықталған кедр және қолөнер апельсин биттері." }
+        "ru": { "name": "Эликсир Алхимика", "shortName": "Эликсир Алхимика", "description": "Выдержанный бурбон, копчёный кедр и ремесленный апельсиновый биттер.", "ingredients": ["Выдержанный бурбон", "Копчёный кедр", "Апельсиновый биттер", "Мёд"] },
+        "uz": { "name": "Alkimyogar Eliksiri", "shortName": "Alkimyogar Eliksiri", "description": "Yetiltirilgan burbon, dudlangan sadr daraxti va hunarmand apelsin bitteri.", "ingredients": ["Yetiltirilgan burbon", "Dudlangan sadr", "Apelsin bitteri", "Asal siropi"] },
+        "kk": { "name": "Алхимик Эликсирі", "shortName": "Алхимик Эликсирі", "description": "Жетілдірілген бурбон, ыстықталған кедр және қолөнер апельсин биттері.", "ingredients": ["Жетілдірілген бурбон", "Ыстықталған кедр", "Апельсин биттері", "Бал сиропы"] }
       },
       "price": 24000,
       "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDn3upX96m5-_tZZG0kwfGs2YQrVD3dTV302nA8dbigTVmf_qof7kz4Ci8Z4GV19Ay6EP4n-PYzw9BNXrQXXU5XkBvrGfYA4ogrw52ki3al5bjxai67fDgNlXE3jAUcJNYh8NDqh8R1p3MyqF07PzSMmTk7cPboHFoV5cWb1SdeAHdrvvWPEsMLpgNSJhzI0AEKE7JJ6uyy3HQyN79Gf-5BGsTwWQ1QIEnqymMu14IMOREdLrL3jN07sq2tz9Mx4bj_24L-7CiQkA",
@@ -202,9 +202,9 @@
       "shortName": "Classic Blend",
       "description": "Hand-selected premium tobacco with notes of double apple and fresh mint.",
       "_t": {
-        "ru": { "name": "Классический Премиум Бленд", "shortName": "Классик Бленд", "description": "Отборный премиальный табак с нотами двойного яблока и свежей мяты." },
-        "uz": { "name": "Klassik Premium Blend", "shortName": "Klassik Blend", "description": "Qo'lda tanlangan premium tamaki, ikki olma va yangi yalpiz notalari bilan." },
-        "kk": { "name": "Классикалық Премиум Бленд", "shortName": "Классик Бленд", "description": "Қолмен таңдалған премиум темекі, қос алма және жаңа жалбыз ноталарымен." }
+        "ru": { "name": "Классический Премиум Бленд", "shortName": "Классик Бленд", "description": "Отборный премиальный табак с нотами двойного яблока и свежей мяты.", "ingredients": ["Премиальный табак", "Двойное яблоко", "Свежая мята", "Натуральный уголь"] },
+        "uz": { "name": "Klassik Premium Blend", "shortName": "Klassik Blend", "description": "Qo'lda tanlangan premium tamaki, ikki olma va yangi yalpiz notalari bilan.", "ingredients": ["Premium tamaki", "Ikki olma", "Yangi yalpiz", "Tabiiy ko'mir"] },
+        "kk": { "name": "Классикалық Премиум Бленд", "shortName": "Классик Бленд", "description": "Қолмен таңдалған премиум темекі, қос алма және жаңа жалбыз ноталарымен.", "ingredients": ["Премиум темекі", "Қос алма", "Жаңа жалбыз", "Табиғи көмір"] }
       },
       "price": 28000,
       "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBswGPMaKvmRVMiCXnMBG31BV7-inzaIk7L-bGC2YTan_N6MON8eRYCjtKbns7y3WOzI-eTs2sbcZG3bC2D5ujOB0ogdie3H8LqVrWE9CBjCw3SnYyDzgXEXmCvnyX4_UGXoML0YjvJqZauoPucSOVaXtUS3lYauGDPetGAby3hoLyRpR90MWdeC_3AG6MOVXVtSyydQq07uaUN2jx7fn6J-TYpbz58JJm-_Xf73An98_A3JoUyut9tXdN8rARc9OP02q8Aez_d2g",

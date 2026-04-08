@@ -472,8 +472,8 @@ export function onLangChange(fn) {
   listeners.push(fn);
 }
 
-// Helper: get translated dish field (name/description)
+// Helper: get translated dish field (name/description/ingredients)
 export function tDish(dish, field) {
-  if (!dish._t || !dish._t[currentLang]) return dish[field];
+  if (currentLang === 'en' || !dish._t || !dish._t[currentLang]) return dish[field];
   return dish._t[currentLang][field] || dish[field];
 }

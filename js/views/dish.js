@@ -62,7 +62,7 @@ export function renderDish(data, dishId) {
           <div class="bg-surface-container p-5 rounded-lg border border-outline-variant/10">
             <h3 class="text-primary font-headline font-bold text-xs tracking-widest uppercase mb-3">${t('dish.ingredients')}</h3>
             <ul class="space-y-2">
-              ${dish.ingredients.map(ing => `<li class="flex items-center gap-2.5 text-on-surface/80 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-primary-container flex-shrink-0"></span>${ing}</li>`).join('')}
+              ${tDish(dish, 'ingredients').map(ing => `<li class="flex items-center gap-2.5 text-on-surface/80 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-primary-container flex-shrink-0"></span>${ing}</li>`).join('')}
             </ul>
           </div>
         </section>
