@@ -81,3 +81,37 @@ img {
 .btn-press:active {
   transform: scale(0.95);
 }
+
+/* Review Modal */
+.review-modal-backdrop {
+  animation: backdropIn 0.2s ease-out;
+}
+@keyframes backdropIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.review-modal-sheet {
+  animation: sheetUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes sheetUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+/* Star rating picker */
+.star-picker .material-symbols-outlined {
+  cursor: pointer;
+  transition: transform 0.15s ease, color 0.15s ease;
+  font-size: 2rem;
+}
+.star-picker .material-symbols-outlined:active {
+  transform: scale(1.3);
+}
+.star-picker .star-active {
+  color: #f2ca50;
+  font-variation-settings: 'FILL' 1;
+}
+.star-picker .star-inactive {
+  color: #4d4635;
+  font-variation-settings: 'FILL' 0;
+}

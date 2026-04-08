@@ -1,5 +1,6 @@
 import { Router } from './router.js';
 import { store } from './store.js';
+import { initFirebase } from './firebase-config.js';
 import { renderHome } from './views/home.js';
 import { renderMenu } from './views/menu.js';
 import { renderDish, cleanupDish } from './views/dish.js';
@@ -34,6 +35,7 @@ function updateCartBadge() {
 
 async function init() {
   await loadData();
+  initFirebase();
 
   const router = new Router([
     {
