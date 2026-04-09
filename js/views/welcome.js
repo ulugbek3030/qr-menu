@@ -36,10 +36,10 @@ export function renderWelcome(onComplete, data) {
       <div class="relative z-20 flex flex-col px-6 pt-10 pb-10 max-w-lg mx-auto">
         <!-- Logo -->
         <header class="flex flex-col items-center justify-center mb-8">
-          <div class="w-20 h-20 mb-3 flex items-center justify-center bg-surface-container-highest rounded-full border border-outline-variant/10 shadow-2xl">
-            <span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+          <div class="w-24 h-24 mb-3 flex items-center justify-center bg-surface-container-highest rounded-full border border-outline-variant/10 shadow-2xl">
+            <img class="w-14 h-14 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjJfJX08ppQgQ_AZlpoQXrqtGweyMpR200j-6lHz-YlnaKn6nk5164Z1gY-GUOABewCulYKs9b-Pt6ueQJjrc7ZXSFUZW_TYVWDrBLYg-SDNX7L90k531PWsRoVI9TDMrXiUvHqWFYMjsK6qB6qx7uIf9Fji5gqsqsyHROKDA2nqYtEQEfR3lt3PzoJthJ9Cci003E6EfrS5gR_5Gnifmc6AaApTiuPSlkqF3qBYYyajUOrJ5_X1xmnoVdCNIhRxvyUWnnQDN06A" alt="Shishka Logo">
           </div>
-          <h1 class="font-headline text-3xl font-extrabold tracking-tighter text-on-surface uppercase" style="text-shadow: 0 0 15px rgba(242,202,80,0.3);">${t('nav.title')}</h1>
+          <h1 class="font-headline text-4xl font-extrabold tracking-tighter text-on-surface uppercase" style="text-shadow: 0 0 15px rgba(242,202,80,0.3);">Шишка</h1>
           <p class="font-label text-[10px] tracking-[0.2em] text-primary/70 mt-1 uppercase">${t('welcome.subtitle_short')}</p>
         </header>
 
