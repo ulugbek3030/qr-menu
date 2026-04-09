@@ -1,5 +1,6 @@
 import { store } from '../store.js';
 import { t, tDish } from '../i18n.js';
+import { fmtPrice } from '../utils.js';
 
 const FILTERS = [
   { id: 'popular', key: 'menu.popular' },
@@ -9,8 +10,11 @@ const FILTERS = [
 ];
 
 let activeFilter = 'popular';
+let lastCategory = null;
 
 export function renderMenu(data, category) {
+  // Reset filter when switching categories
+  if (category !== lastCategory) { activeFilter = 'popular'; lastCategory = category; }
   const cat = data.categories.find(c => c.id === category);
   const allDishes = data.dishes.filter(d => d.category === category);
   const app = document.getElementById('app');
@@ -123,6 +127,4 @@ function attachAddButtons(allDishes) {
   });
 }
 
-function formatPrice(price) {
-  return price.toLocaleString('en-US').replace(/,/g, ' ') + ' ' + t('fmt.sum');
-}
+function formatPrice(p) { return fmtPrice(p); }

@@ -1,5 +1,6 @@
 import { store } from '../store.js';
 import { t, tDish } from '../i18n.js';
+import { fmtPrice, WIFI } from '../utils.js';
 
 export function renderHome(data) {
   const specials = data.dishes.filter(d => d.tags.includes('specials'));
@@ -115,12 +116,8 @@ function renderSignatureDish(dish) {
   `;
 }
 
-function formatPrice(price) {
-  return price.toLocaleString('en-US').replace(/,/g, ' ') + ' ' + t('fmt.sum');
-}
-
-// Wi-Fi config
-const WIFI = { ssid: 'Dionis', password: 'Dio135662', encryption: 'WPA' };
+// fmtPrice + WIFI imported from utils.js
+function formatPrice(p) { return fmtPrice(p); }
 
 function openWifiModal() {
   const existing = document.getElementById('wifi-modal');
@@ -172,11 +169,11 @@ function openWifiModal() {
 
       <p class="text-on-surface-variant text-[10px] text-center">${t('wifi.scan_qr')}</p>
 
-      <!-- Connect Button -->
-      <a id="wifi-connect" href="wifi://${WIFI.ssid}" class="block w-full py-3.5 rounded-full gold-gradient text-on-primary font-headline font-bold uppercase tracking-[0.15em] text-sm text-center active:scale-95 transition-all shadow-[0_8px_32px_rgba(212,175,55,0.15)]">
-        <span class="material-symbols-outlined text-base align-middle mr-1">wifi</span>
+      <!-- Copy Password Button -->
+      <button id="wifi-connect" class="w-full py-3.5 rounded-full gold-gradient text-on-primary font-headline font-bold uppercase tracking-[0.15em] text-sm text-center active:scale-95 transition-all shadow-[0_8px_32px_rgba(212,175,55,0.15)]">
+        <span class="material-symbols-outlined text-base align-middle mr-1">content_copy</span>
         ${t('wifi.connect')}
-      </a>
+      </button>
     </div>
   `;
 
@@ -194,5 +191,13 @@ function openWifiModal() {
       btn.textContent = 'check';
       setTimeout(() => { btn.textContent = 'content_copy'; }, 1500);
     }).catch(() => {});
+  });
+
+  // Connect button — copies password + closes
+  modal.querySelector('#wifi-connect').addEventListener('click', () => {
+    navigator.clipboard.writeText(WIFI.password).catch(() => {});
+    const btn = modal.querySelector('#wifi-connect');
+    btn.innerHTML = '<span class="material-symbols-outlined text-base align-middle mr-1">check</span> ' + t('menu.added');
+    setTimeout(() => { modal.remove(); }, 1000);
   });
 }

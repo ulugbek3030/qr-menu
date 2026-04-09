@@ -1,5 +1,12 @@
 import { store } from '../store.js';
 import { t, tDish } from '../i18n.js';
+import { esc, fmtPrice } from '../utils.js';
+
+// Resolve translated dish name from menuData, fallback to stored English
+function dishName(item, data, field) {
+  const dish = data.dishes.find(d => d.id === item.id);
+  return dish ? esc(tDish(dish, field)) : esc(item[field]);
+}
 
 export function renderCart(data) {
   const app = document.getElementById('app');
@@ -34,14 +41,14 @@ export function renderCart(data) {
           ${cart.map(item => `
             <div class="flex items-center gap-4 p-3 rounded-lg bg-surface-container-low">
               <div class="w-20 h-20 rounded-DEFAULT overflow-hidden flex-shrink-0">
-                <img alt="${item.shortName}" class="w-full h-full object-cover" src="${item.image}" loading="lazy">
+                <img alt="${dishName(item, data, 'shortName')}" class="w-full h-full object-cover" src="${item.image}" loading="lazy">
               </div>
               <div class="flex-grow space-y-1 min-w-0">
                 <div class="flex justify-between items-start gap-2">
-                  <h3 class="font-headline font-bold text-base text-on-surface truncate">${item.shortName}</h3>
+                  <h3 class="font-headline font-bold text-base text-on-surface truncate">${dishName(item, data, 'shortName')}</h3>
                   <span class="font-label text-primary text-sm font-semibold tracking-tighter flex-shrink-0">${fmtPrice(item.price * item.qty)}</span>
                 </div>
-                <p class="text-[10px] text-on-surface-variant leading-relaxed truncate">${item.description}</p>
+                <p class="text-[10px] text-on-surface-variant leading-relaxed truncate">${dishName(item, data, 'description')}</p>
                 <div class="flex items-center justify-between pt-1">
                   <div class="flex items-center bg-surface-container-lowest rounded-full p-0.5">
                     <button data-qty-minus="${item.id}" class="w-6 h-6 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-sm">remove</span></button>
@@ -124,6 +131,4 @@ function attachCartHandlers(rerender) {
   if (addG) addG.addEventListener('click', () => { store.setSplitGuests(store.getSplit().guests + 1); rerender(); });
 }
 
-function fmtPrice(price) {
-  return price.toLocaleString('en-US').replace(/,/g, ' ') + ' ' + t('fmt.sum');
-}
+// fmtPrice imported from utils.js

@@ -1,5 +1,11 @@
 import { store } from '../store.js';
-import { t } from '../i18n.js';
+import { t, tDish } from '../i18n.js';
+import { esc, fmtPrice, fmtNum } from '../utils.js';
+
+function dishName(item, data) {
+  const dish = data.dishes.find(d => d.id === item.id);
+  return dish ? esc(tDish(dish, 'shortName')) : esc(item.shortName);
+}
 
 export function renderPayment(data) {
   const app = document.getElementById('app');
@@ -28,7 +34,7 @@ export function renderPayment(data) {
         <section class="mb-8">
           <h2 class="font-headline text-xl font-bold tracking-tighter mb-4 uppercase">${t('pay.order')}</h2>
           <div class="bg-surface-container-low rounded-lg p-5 space-y-3">
-            ${cart.map(item => `<div class="flex justify-between items-center"><span class="text-on-surface-variant font-label text-sm uppercase tracking-wide">${item.shortName}${item.qty > 1 ? ` (x${item.qty})` : ''}</span><span class="font-headline text-on-surface">${fmtPrice(item.price * item.qty)}</span></div>`).join('')}
+            ${cart.map(item => `<div class="flex justify-between items-center"><span class="text-on-surface-variant font-label text-sm uppercase tracking-wide">${dishName(item, data)}${item.qty > 1 ? ` (x${item.qty})` : ''}</span><span class="font-headline text-on-surface">${fmtPrice(item.price * item.qty)}</span></div>`).join('')}
             <div class="pt-3 border-t border-surface-container-highest flex justify-between items-end">
               <span class="text-on-surface-variant font-label text-[10px] uppercase tracking-[0.1em]">${t('pay.subtotal')}</span>
               <span class="font-headline text-lg text-on-surface">${fmtPrice(subtotal)}</span>
@@ -111,5 +117,4 @@ export function cleanupPayment() {
   if (o) o.remove();
 }
 
-function fmtPrice(p) { return p.toLocaleString('en-US').replace(/,/g, ' ') + ' ' + t('fmt.sum'); }
-function fmtNum(p) { return p.toLocaleString('en-US').replace(/,/g, ' '); }
+// fmtPrice, fmtNum imported from utils.js

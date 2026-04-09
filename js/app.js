@@ -17,9 +17,21 @@ let prevView = null;
 let router = null;
 
 async function loadData() {
-  const res = await fetch('data/menu.json');
-  menuData = await res.json();
-  document.getElementById('header-logo').src = menuData.restaurant.logo;
+  try {
+    const res = await fetch('data/menu.json');
+    if (!res.ok) throw new Error('Failed to load menu');
+    menuData = await res.json();
+    document.getElementById('header-logo').src = menuData.restaurant.logo;
+  } catch (e) {
+    document.getElementById('app').innerHTML = `
+      <div class="px-5 py-20 text-center">
+        <span class="material-symbols-outlined text-5xl text-error mb-3">error</span>
+        <h2 class="font-headline text-xl font-bold text-on-surface mb-2">Failed to load menu</h2>
+        <p class="text-on-surface-variant text-sm mb-6">${e.message}</p>
+        <button onclick="location.reload()" class="px-6 py-3 gold-gradient text-black rounded-full font-bold text-sm">Retry</button>
+      </div>`;
+    throw e;
+  }
 }
 
 function cleanup() {

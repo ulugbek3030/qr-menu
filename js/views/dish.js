@@ -2,6 +2,7 @@ import { store } from '../store.js';
 import { t, tPlural, tDish } from '../i18n.js';
 import { getReviews, addReview } from '../reviews.js';
 import { getDb } from '../firebase-config.js';
+import { esc, fmtPrice } from '../utils.js';
 
 export function renderDish(data, dishId) {
   const dish = data.dishes.find(d => d.id === dishId);
@@ -133,24 +134,27 @@ async function loadFirebaseReviews(dishId, staticReviews) {
 }
 
 function renderReviewCard(review) {
-  const initial = (review.name || 'G').charAt(0).toUpperCase();
-  const hasAvatar = review.avatar && review.avatar.startsWith('http');
+  const name = esc(review.name) || t('review.guest');
+  const initial = name.charAt(0).toUpperCase();
+  const text = esc(review.text);
+  const role = esc(review.role);
+  const hasAvatar = review.avatar && review.avatar.startsWith('https://');
   const timeAgo = review.createdAt ? formatTimeAgo(review.createdAt) : '';
   return `
     <div class="bg-surface-container-low p-5 rounded-lg space-y-3 border-l-4 border-primary">
       <div class="flex justify-between items-start">
         <div class="flex items-center gap-2.5">
           ${hasAvatar
-            ? `<div class="w-9 h-9 rounded-full overflow-hidden bg-surface-variant"><img class="w-full h-full object-cover" src="${review.avatar}" alt="${review.name}" loading="lazy"></div>`
+            ? `<div class="w-9 h-9 rounded-full overflow-hidden bg-surface-variant"><img class="w-full h-full object-cover" src="${esc(review.avatar)}" alt="${name}" loading="lazy"></div>`
             : `<div class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-headline font-bold text-sm">${initial}</div>`}
           <div>
-            <p class="text-on-surface font-bold text-sm">${review.name || t('review.guest')}</p>
-            <p class="text-on-surface-variant text-[9px] uppercase tracking-tighter">${review.role || timeAgo || t('review.guest')}</p>
+            <p class="text-on-surface font-bold text-sm">${name}</p>
+            <p class="text-on-surface-variant text-[9px] uppercase tracking-tighter">${role || timeAgo || t('review.guest')}</p>
           </div>
         </div>
         <div class="flex gap-0.5 text-primary">${Array.from({length: 5}, (_, i) => `<span class="material-symbols-outlined text-sm ${i < review.rating ? 'star-filled' : ''}">star</span>`).join('')}</div>
       </div>
-      <p class="text-on-surface/90 text-sm leading-relaxed italic">"${review.text}"</p>
+      <p class="text-on-surface/90 text-sm leading-relaxed italic">"${text}"</p>
     </div>
   `;
 }
@@ -242,6 +246,4 @@ export function cleanupDish() {
   if (modal) modal.remove();
 }
 
-function fmtPrice(price) {
-  return price.toLocaleString('en-US').replace(/,/g, ' ') + ' ' + t('fmt.sum');
-}
+// fmtPrice imported from utils.js

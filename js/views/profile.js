@@ -1,5 +1,6 @@
 import { auth } from '../auth.js';
 import { t, getLang, setLang, getLangLabel, getLangName } from '../i18n.js';
+import { esc } from '../utils.js';
 
 export function renderProfile(onLogout) {
   const app = document.getElementById('app');
@@ -16,10 +17,10 @@ export function renderProfile(onLogout) {
       <!-- Avatar + Name -->
       <div class="flex items-center gap-4 mb-8">
         <div class="w-16 h-16 rounded-full gold-gradient flex items-center justify-center text-on-primary font-headline font-extrabold text-2xl">
-          ${user.name.charAt(0).toUpperCase()}
+          ${esc(user.name).charAt(0).toUpperCase()}
         </div>
         <div>
-          <h3 class="font-headline text-xl font-bold text-on-surface">${user.name}</h3>
+          <h3 class="font-headline text-xl font-bold text-on-surface">${esc(user.name)}</h3>
           <p class="text-on-surface-variant text-xs">${t('profile.member_since')} ${createdDate}</p>
         </div>
       </div>
@@ -31,7 +32,7 @@ export function renderProfile(onLogout) {
             <span class="material-symbols-outlined text-primary">phone</span>
             <div>
               <p class="text-on-surface-variant text-[10px] uppercase tracking-widest">${t('profile.phone')}</p>
-              <p class="text-on-surface font-bold text-sm">${user.phone}</p>
+              <p class="text-on-surface font-bold text-sm">${esc(user.phone) || '—'}</p>
             </div>
           </div>
         </div>

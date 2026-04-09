@@ -1,5 +1,6 @@
 import { auth } from '../auth.js';
 import { t, setLang, getLang, getLangName } from '../i18n.js';
+import { WIFI } from '../utils.js';
 
 // Background image from Stitch design
 const BG_IMAGE = 'https://lh3.googleusercontent.com/aida-public/AB6AXuDYTbtgPhHdbhDe5vURmp0S3QG_2ia7NHYUnMM_VyMI1toRQsXEoToDrS2KdvVhcfRbwwhiDHg9_RpsK2k0xn1fLBJD2C578UxFJwapGlN58LMBVrrlqBPQ3A_hEwO7su9ja_QNTIvpxsksLBEopukraQw3kQanke96FQvK-iGTgZCKxyWlXcLNCBlREuD2gugmfiMheWxFYuagjHxC-BFSeBPQy8eMafyBxL-ChtlrhbuxG2--kx5afCmvjAt9Oa6ScJRMuVkoMg';
@@ -215,7 +216,6 @@ function cleanupBg() {
 }
 
 function openWifiFromWelcome() {
-  const WIFI = { ssid: 'Dionis', password: 'Dio135662', encryption: 'WPA' };
   const wifiString = `WIFI:T:${WIFI.encryption};S:${WIFI.ssid};P:${WIFI.password};;`;
   const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&bgcolor=131313&color=f2ca50&data=${encodeURIComponent(wifiString)}`;
 
@@ -245,11 +245,11 @@ function openWifiFromWelcome() {
         </div>
         <div class="space-y-3 flex-grow">
           <div>
-            <p class="text-on-surface-variant text-[9px] uppercase tracking-widest">SSID</p>
+            <p class="text-on-surface-variant text-[9px] uppercase tracking-widest">${t('wifi.network')}</p>
             <p class="text-on-surface font-headline font-bold text-base">${WIFI.ssid}</p>
           </div>
           <div>
-            <p class="text-on-surface-variant text-[9px] uppercase tracking-widest">Password</p>
+            <p class="text-on-surface-variant text-[9px] uppercase tracking-widest">${t('wifi.password')}</p>
             <div class="flex items-center gap-1.5">
               <p class="text-on-surface font-mono text-base">${WIFI.password}</p>
               <button id="copy-pw-w" class="w-7 h-7 flex items-center justify-center rounded-full hover:bg-primary/10 transition-colors active:scale-90">
@@ -259,9 +259,9 @@ function openWifiFromWelcome() {
           </div>
         </div>
       </div>
-      <a href="wifi://${WIFI.ssid}" class="block w-full py-3 rounded-full gold-gradient text-on-primary font-headline font-bold uppercase tracking-[0.15em] text-sm text-center active:scale-95 transition-all">
-        <span class="material-symbols-outlined text-base align-middle mr-1">wifi</span> Connect
-      </a>
+      <button id="wifi-copy-w" class="w-full py-3 rounded-full gold-gradient text-on-primary font-headline font-bold uppercase tracking-[0.15em] text-sm text-center active:scale-95 transition-all">
+        <span class="material-symbols-outlined text-base align-middle mr-1">content_copy</span> ${t('wifi.connect')}
+      </button>
     </div>
   `;
 
@@ -273,5 +273,11 @@ function openWifiFromWelcome() {
     const icon = modal.querySelector('#copy-pw-w span');
     icon.textContent = 'check';
     setTimeout(() => { icon.textContent = 'content_copy'; }, 1500);
+  });
+  modal.querySelector('#wifi-copy-w')?.addEventListener('click', () => {
+    navigator.clipboard.writeText(WIFI.password).catch(() => {});
+    const btn = modal.querySelector('#wifi-copy-w');
+    btn.innerHTML = '<span class="material-symbols-outlined text-base align-middle mr-1">check</span> ' + t('menu.added');
+    setTimeout(() => { modal.remove(); }, 1000);
   });
 }

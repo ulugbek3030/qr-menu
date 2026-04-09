@@ -1,5 +1,6 @@
 import { store } from '../store.js';
 import { t, tDish } from '../i18n.js';
+import { fmtPrice } from '../utils.js';
 
 export function renderSearch(data) {
   const app = document.getElementById('app');
@@ -100,6 +101,4 @@ function renderCategories(data) {
   `;
 }
 
-function fmtPrice(price) {
-  return price.toLocaleString('en-US').replace(/,/g, ' ') + ' ' + t('fmt.sum');
-}
+// fmtPrice imported from utils.js
