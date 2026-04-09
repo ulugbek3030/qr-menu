@@ -131,6 +131,26 @@ const translations = {
     'search.cat_kitchen': 'Kitchen',
     'search.cat_bar': 'Bar',
     'search.cat_hookah': 'Hookah',
+
+    // Welcome / Auth
+    'welcome.subtitle': 'Enter your phone to get started',
+    'welcome.phone': 'Phone number',
+    'welcome.continue': 'Continue',
+    'welcome.privacy': 'Your data is safe with us',
+    'welcome.new_guest': 'Welcome!',
+    'welcome.fill_info': 'Tell us your name to continue',
+    'welcome.your_name': 'Your name',
+    'welcome.name_placeholder': 'John',
+    'welcome.language': 'Preferred language',
+    'welcome.register': 'Start Exploring',
+
+    // Profile
+    'profile.title': 'Profile',
+    'profile.member_since': 'Guest since',
+    'profile.phone': 'Phone',
+    'profile.language': 'Language',
+    'profile.logout': 'Log Out',
+    'profile.logout_confirm': 'Are you sure you want to log out?',
   },
 
   ru: {
@@ -245,6 +265,24 @@ const translations = {
     'search.cat_kitchen': 'Кухня',
     'search.cat_bar': 'Бар',
     'search.cat_hookah': 'Кальян',
+
+    'welcome.subtitle': 'Введите номер телефона для начала',
+    'welcome.phone': 'Номер телефона',
+    'welcome.continue': 'Продолжить',
+    'welcome.privacy': 'Ваши данные в безопасности',
+    'welcome.new_guest': 'Добро пожаловать!',
+    'welcome.fill_info': 'Представьтесь, чтобы продолжить',
+    'welcome.your_name': 'Ваше имя',
+    'welcome.name_placeholder': 'Азиз',
+    'welcome.language': 'Предпочтительный язык',
+    'welcome.register': 'Начать',
+
+    'profile.title': 'Профиль',
+    'profile.member_since': 'Гость с',
+    'profile.phone': 'Телефон',
+    'profile.language': 'Язык',
+    'profile.logout': 'Выйти',
+    'profile.logout_confirm': 'Вы уверены, что хотите выйти?',
   },
 
   uz: {
@@ -359,6 +397,24 @@ const translations = {
     'search.cat_kitchen': 'Oshxona',
     'search.cat_bar': 'Bar',
     'search.cat_hookah': 'Qalyon',
+
+    'welcome.subtitle': 'Boshlash uchun telefon raqamingizni kiriting',
+    'welcome.phone': 'Telefon raqami',
+    'welcome.continue': 'Davom etish',
+    'welcome.privacy': 'Ma\'lumotlaringiz xavfsiz',
+    'welcome.new_guest': 'Xush kelibsiz!',
+    'welcome.fill_info': 'Davom etish uchun ismingizni kiriting',
+    'welcome.your_name': 'Ismingiz',
+    'welcome.name_placeholder': 'Aziz',
+    'welcome.language': 'Til',
+    'welcome.register': 'Boshlash',
+
+    'profile.title': 'Profil',
+    'profile.member_since': 'Mehmon',
+    'profile.phone': 'Telefon',
+    'profile.language': 'Til',
+    'profile.logout': 'Chiqish',
+    'profile.logout_confirm': 'Chiqishni xohlaysizmi?',
   },
 
   kk: {
@@ -473,6 +529,24 @@ const translations = {
     'search.cat_kitchen': 'Ас үй',
     'search.cat_bar': 'Бар',
     'search.cat_hookah': 'Кальян',
+
+    'welcome.subtitle': 'Бастау үшін телефон нөміріңізді енгізіңіз',
+    'welcome.phone': 'Телефон нөмірі',
+    'welcome.continue': 'Жалғастыру',
+    'welcome.privacy': 'Деректеріңіз қауіпсіз',
+    'welcome.new_guest': 'Қош келдіңіз!',
+    'welcome.fill_info': 'Жалғастыру үшін атыңызды енгізіңіз',
+    'welcome.your_name': 'Атыңыз',
+    'welcome.name_placeholder': 'Азиз',
+    'welcome.language': 'Тіл',
+    'welcome.register': 'Бастау',
+
+    'profile.title': 'Профиль',
+    'profile.member_since': 'Қонақ',
+    'profile.phone': 'Телефон',
+    'profile.language': 'Тіл',
+    'profile.logout': 'Шығу',
+    'profile.logout_confirm': 'Шығуды қалайсыз ба?',
   }
 };
 

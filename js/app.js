@@ -1,5 +1,6 @@
 import { Router } from './router.js';
 import { store } from './store.js';
+import { auth } from './auth.js';
 import { initFirebase } from './firebase-config.js';
 import { t, getLang, setLang, getLangLabel, onLangChange } from './i18n.js';
 import { renderHome } from './views/home.js';
@@ -8,6 +9,8 @@ import { renderDish, cleanupDish } from './views/dish.js';
 import { renderCart } from './views/cart.js';
 import { renderPayment, cleanupPayment } from './views/payment.js';
 import { renderSearch } from './views/search.js';
+import { renderWelcome } from './views/welcome.js';
+import { renderProfile } from './views/profile.js';
 
 let menuData = null;
 let prevView = null;
@@ -32,13 +35,10 @@ function updateCartBadge() {
 }
 
 function updateStaticLabels() {
-  // Nav labels
   const navKeys = ['nav.menu', 'nav.search', 'nav.cart', 'nav.profile'];
   document.querySelectorAll('.nav-label').forEach((el, i) => { el.textContent = t(navKeys[i]); });
-  // Waiter button
   const wl = document.getElementById('waiter-label');
   if (wl) wl.textContent = t('nav.waiter');
-  // Lang toggle
   const lc = document.getElementById('lang-current');
   if (lc) lc.textContent = getLangLabel(getLang());
 }
@@ -52,16 +52,32 @@ function setupLangSelector() {
     e.stopPropagation();
     dropdown.classList.toggle('hidden');
   });
-
   document.addEventListener('click', () => dropdown.classList.add('hidden'));
-
   dropdown.querySelectorAll('.lang-option').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.stopPropagation();
       setLang(btn.dataset.lang);
+      // Also save lang to user profile
+      if (auth.isLoggedIn()) auth.updateUser({ lang: btn.dataset.lang });
       dropdown.classList.add('hidden');
     });
   });
+}
+
+function showWelcome() {
+  renderWelcome(() => {
+    // After registration/login — show header+nav and go to home
+    document.getElementById('app-header').style.display = '';
+    document.getElementById('bottom-nav').style.display = '';
+    updateStaticLabels();
+    location.hash = '#/';
+    router.resolve();
+  });
+}
+
+function handleLogout() {
+  location.hash = '#/';
+  showWelcome();
 }
 
 async function init() {
@@ -72,6 +88,7 @@ async function init() {
     {
       path: '/', nav: 'home',
       handler: () => {
+        if (!auth.isLoggedIn()) { showWelcome(); return; }
         cleanup(); prevView = 'home';
         document.getElementById('app-header').style.display = '';
         document.getElementById('bottom-nav').style.display = '';
@@ -81,6 +98,7 @@ async function init() {
     {
       path: '/menu/:category', nav: 'home',
       handler: ({ category }) => {
+        if (!auth.isLoggedIn()) { showWelcome(); return; }
         cleanup(); prevView = 'menu';
         document.getElementById('app-header').style.display = '';
         document.getElementById('bottom-nav').style.display = '';
@@ -90,6 +108,7 @@ async function init() {
     {
       path: '/dish/:id', nav: '',
       handler: ({ id }) => {
+        if (!auth.isLoggedIn()) { showWelcome(); return; }
         cleanup(); prevView = 'dish';
         document.getElementById('app-header').style.display = 'none';
         renderDish(menuData, id); window.scrollTo(0, 0);
@@ -98,6 +117,7 @@ async function init() {
     {
       path: '/cart', nav: 'cart',
       handler: () => {
+        if (!auth.isLoggedIn()) { showWelcome(); return; }
         cleanup(); prevView = 'cart';
         document.getElementById('app-header').style.display = '';
         document.getElementById('bottom-nav').style.display = '';
@@ -107,6 +127,7 @@ async function init() {
     {
       path: '/payment', nav: '',
       handler: () => {
+        if (!auth.isLoggedIn()) { showWelcome(); return; }
         cleanup(); prevView = 'payment';
         document.getElementById('app-header').style.display = 'none';
         renderPayment(menuData); window.scrollTo(0, 0);
@@ -115,6 +136,7 @@ async function init() {
     {
       path: '/search', nav: 'search',
       handler: () => {
+        if (!auth.isLoggedIn()) { showWelcome(); return; }
         cleanup(); prevView = 'search';
         document.getElementById('app-header').style.display = '';
         document.getElementById('bottom-nav').style.display = '';
@@ -124,15 +146,11 @@ async function init() {
     {
       path: '/profile', nav: 'profile',
       handler: () => {
+        if (!auth.isLoggedIn()) { showWelcome(); return; }
         cleanup(); prevView = 'profile';
         document.getElementById('app-header').style.display = '';
         document.getElementById('bottom-nav').style.display = '';
-        document.getElementById('app').innerHTML = `
-          <div class="px-5 py-20 text-center">
-            <span class="material-symbols-outlined text-5xl text-on-surface-variant/30 mb-3">person</span>
-            <h2 class="font-headline text-xl font-bold tracking-tighter text-on-surface mb-2">${t('nav.profile')}</h2>
-            <p class="text-on-surface-variant text-sm">${t('app.coming_soon')}</p>
-          </div>`;
+        renderProfile(handleLogout); window.scrollTo(0, 0);
       }
     }
   ]);
@@ -142,13 +160,21 @@ async function init() {
   updateStaticLabels();
   setupLangSelector();
 
-  // Re-render on language change
   onLangChange(() => {
     updateStaticLabels();
-    router.resolve(); // re-render current view
+    if (auth.isLoggedIn()) auth.updateUser({ lang: getLang() });
+    router.resolve();
   });
 
-  router.resolve();
+  // If user is logged in, restore their language and go to menu
+  if (auth.isLoggedIn()) {
+    const user = auth.getUser();
+    if (user.lang) setLang(user.lang);
+    router.resolve();
+  } else {
+    // Show welcome/registration screen
+    showWelcome();
+  }
 }
 
 init();
