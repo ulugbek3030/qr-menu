@@ -132,6 +132,13 @@ const translations = {
     'search.cat_bar': 'Bar',
     'search.cat_hookah': 'Hookah',
 
+    // Wi-Fi
+    'wifi.title': 'Free Wi-Fi',
+    'wifi.scan_qr': 'Scan QR code to connect automatically',
+    'wifi.network': 'Network',
+    'wifi.password': 'Password',
+    'wifi.connect': 'Connect to Wi-Fi',
+
     // Welcome / Auth
     'welcome.subtitle': 'Enter your phone to get started',
     'welcome.phone': 'Phone number',
@@ -266,6 +273,12 @@ const translations = {
     'search.cat_bar': 'Бар',
     'search.cat_hookah': 'Кальян',
 
+    'wifi.title': 'Бесплатный Wi-Fi',
+    'wifi.scan_qr': 'Отсканируйте QR-код для автоподключения',
+    'wifi.network': 'Сеть',
+    'wifi.password': 'Пароль',
+    'wifi.connect': 'Подключиться к Wi-Fi',
+
     'welcome.subtitle': 'Введите номер телефона для начала',
     'welcome.phone': 'Номер телефона',
     'welcome.continue': 'Продолжить',
@@ -398,6 +411,12 @@ const translations = {
     'search.cat_bar': 'Bar',
     'search.cat_hookah': 'Qalyon',
 
+    'wifi.title': 'Bepul Wi-Fi',
+    'wifi.scan_qr': 'Avtomatik ulanish uchun QR kodni skanerlang',
+    'wifi.network': 'Tarmoq',
+    'wifi.password': 'Parol',
+    'wifi.connect': 'Wi-Fi ga ulanish',
+
     'welcome.subtitle': 'Boshlash uchun telefon raqamingizni kiriting',
     'welcome.phone': 'Telefon raqami',
     'welcome.continue': 'Davom etish',
@@ -529,6 +548,12 @@ const translations = {
     'search.cat_kitchen': 'Ас үй',
     'search.cat_bar': 'Бар',
     'search.cat_hookah': 'Кальян',
+
+    'wifi.title': 'Тегін Wi-Fi',
+    'wifi.scan_qr': 'Автоматты қосылу үшін QR кодты сканерлеңіз',
+    'wifi.network': 'Желі',
+    'wifi.password': 'Құпия сөз',
+    'wifi.connect': 'Wi-Fi-ға қосылу',
 
     'welcome.subtitle': 'Бастау үшін телефон нөміріңізді енгізіңіз',
     'welcome.phone': 'Телефон нөмірі',
