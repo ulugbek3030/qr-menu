@@ -28,9 +28,15 @@ async function loadData() {
     try {
       const apiRes = await fetch(`${API_BASE}/api/menu`);
       if (apiRes.ok && (apiRes.headers.get('content-type') || '').includes('json')) {
-        menuData = await apiRes.json();
-        apiOk = true;
-        console.log(`Menu loaded from iiko (rev: ${menuData._revision})`);
+        const apiData = await apiRes.json();
+        // Only use API data if it has enough dishes (iiko from US returns partial data)
+        if (apiData.dishes && apiData.dishes.length > 10) {
+          menuData = apiData;
+          apiOk = true;
+          console.log(`Menu loaded from iiko API (${apiData.dishes.length} dishes, rev: ${apiData._revision})`);
+        } else {
+          console.log(`API returned too few dishes (${apiData.dishes?.length}), using fallback`);
+        }
       }
     } catch { /* API unavailable */ }
 
