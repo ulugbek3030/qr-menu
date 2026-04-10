@@ -13,8 +13,9 @@ export async function getToken() {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ apiLogin: API_KEY })
   });
-  if (!res.ok) throw new Error(`iiko auth failed: ${res.status}`);
-  const data = await res.json();
+  const body = await res.text();
+  if (!res.ok) throw new Error(`iiko auth failed: ${res.status} ${body}`);
+  const data = JSON.parse(body);
   cachedToken = data.token;
   tokenExpiry = Date.now() + 45 * 60 * 1000; // refresh every 45 min
   return cachedToken;

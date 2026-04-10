@@ -34,17 +34,37 @@ export default async function handler(req, res) {
   try {
     const data = await getNomenclature();
     const enrich = getEnrichments();
+
+    // Debug: check raw data
+    const groupCount = (data.groups || []).filter(g => !g.isDeleted).length;
+    const prodCount = (data.products || []).filter(p => !p.isDeleted && p.type === 'Dish').length;
+    const menuRootGroup = (data.groups || []).find(g => !g.isDeleted && g.name === 'Menu Resto Bar');
+
     const menu = transformMenu(data, enrich);
-    res.setHeader('Cache-Control', 's-maxage=300, stale-while-revalidate=60');
+    // Count products per group path
+    const prodByGroup = {};
+    for (const p of (data.products || [])) {
+      if (p.isDeleted || p.type !== 'Dish') continue;
+      const g = (data.groups || []).find(gg => gg.id === p.parentGroup);
+      const gname = g ? g.name : '???';
+      prodByGroup[gname] = (prodByGroup[gname] || 0) + 1;
+    }
+    menu._debug = { groupCount, prodCount, menuRootFound: !!menuRootGroup, menuRootId: menuRootGroup?.id, prodByGroup };
+
+    res.setHeader('Cache-Control', 's-maxage=60, stale-while-revalidate=10');
     return res.status(200).json(menu);
   } catch (err) {
-    console.error('Menu API error:', err.message);
+    console.error('Menu API error:', err.message, err.stack);
     try {
       const fallback = readFileSync(join(process.cwd(), 'data', 'menu.json'), 'utf-8');
       res.setHeader('X-Fallback', 'true');
-      return res.status(200).json(JSON.parse(fallback));
+      res.setHeader('X-Error', encodeURIComponent(err.message));
+      const fb = JSON.parse(fallback);
+      fb._error = err.message;
+      fb._envCheck = { hasKey: !!process.env.IIKO_API_KEY, hasOrg: !!process.env.IIKO_ORG_ID };
+      return res.status(200).json(fb);
     } catch {
-      return res.status(500).json({ error: 'Failed to load menu' });
+      return res.status(500).json({ error: err.message });
     }
   }
 }

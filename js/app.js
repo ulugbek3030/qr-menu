@@ -16,19 +16,25 @@ let menuData = null;
 let prevView = null;
 let router = null;
 
-// Menu API URL — uses Vercel API if available, falls back to static JSON
-const API_BASE = location.hostname === 'localhost' || location.hostname === '127.0.0.1'
-  ? '' : ''; // Same origin on Vercel; override for cross-origin if needed
+// Vercel API base — same origin on Vercel, skip on static servers
+const VERCEL_HOST = 'shishka-menu.vercel.app';
+const isVercel = location.hostname === VERCEL_HOST || location.hostname.endsWith('.vercel.app');
+const API_BASE = isVercel ? '' : `https://${VERCEL_HOST}`;
 
 async function loadData() {
   try {
-    // Try API first (iiko sync)
-    const apiRes = await fetch(`${API_BASE}/api/menu`).catch(() => null);
-    if (apiRes && apiRes.ok) {
-      menuData = await apiRes.json();
-      console.log(`Menu loaded from iiko (source: ${menuData._source}, rev: ${menuData._revision})`);
-    } else {
-      // Fallback to static JSON
+    // Try iiko API first
+    let apiOk = false;
+    try {
+      const apiRes = await fetch(`${API_BASE}/api/menu`);
+      if (apiRes.ok && (apiRes.headers.get('content-type') || '').includes('json')) {
+        menuData = await apiRes.json();
+        apiOk = true;
+        console.log(`Menu loaded from iiko (rev: ${menuData._revision})`);
+      }
+    } catch { /* API unavailable */ }
+
+    if (!apiOk) {
       const res = await fetch('data/menu.json');
       if (!res.ok) throw new Error('Failed to load menu');
       menuData = await res.json();
