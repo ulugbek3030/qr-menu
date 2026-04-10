@@ -7,6 +7,30 @@
   },
   "categories": [
     {
+      "id": "закуски-к-пиву",
+      "name": "Закуски к пиву",
+      "subtitle": "",
+      "icon": "sports_bar",
+      "order": 0,
+      "dishCount": 7
+    },
+    {
+      "id": "текила",
+      "name": "Текила",
+      "subtitle": "",
+      "icon": "liquor",
+      "order": 0,
+      "dishCount": 4
+    },
+    {
+      "id": "чай",
+      "name": "Чай",
+      "subtitle": "",
+      "icon": "emoji_food_beverage",
+      "order": 0,
+      "dishCount": 11
+    },
+    {
       "id": "шашлыки",
       "name": "Шашлыки",
       "subtitle": "",
@@ -15,28 +39,20 @@
       "dishCount": 5
     },
     {
-      "id": "текила",
-      "name": "Текила",
+      "id": "прохладительные-напитки",
+      "name": "Прохладительные напитки",
       "subtitle": "",
-      "icon": "restaurant",
-      "order": 0,
-      "dishCount": 4
+      "icon": "local_drink",
+      "order": 1,
+      "dishCount": 17
     },
     {
-      "id": "чай",
-      "name": "Чай",
-      "subtitle": "",
-      "icon": "restaurant",
-      "order": 0,
-      "dishCount": 11
-    },
-    {
-      "id": "закуски-к-пиву",
-      "name": "Закуски к пиву",
+      "id": "сидр",
+      "name": "Сидр",
       "subtitle": "",
       "icon": "sports_bar",
-      "order": 0,
-      "dishCount": 7
+      "order": 1,
+      "dishCount": 4
     },
     {
       "id": "холодные-супы",
@@ -47,20 +63,12 @@
       "dishCount": 1
     },
     {
-      "id": "сидр",
-      "name": "Сидр",
+      "id": "ром",
+      "name": "Ром",
       "subtitle": "",
-      "icon": "restaurant",
-      "order": 1,
-      "dishCount": 4
-    },
-    {
-      "id": "прохладительные-напитки",
-      "name": "Прохладительные напитки",
-      "subtitle": "",
-      "icon": "restaurant",
-      "order": 1,
-      "dishCount": 17
+      "icon": "liquor",
+      "order": 2,
+      "dishCount": 5
     },
     {
       "id": "холодные-закуски",
@@ -71,12 +79,20 @@
       "dishCount": 19
     },
     {
-      "id": "ром",
-      "name": "Ром",
+      "id": "лимонады",
+      "name": "Лимонады",
       "subtitle": "",
-      "icon": "restaurant",
-      "order": 2,
-      "dishCount": 5
+      "icon": "local_drink",
+      "order": 3,
+      "dishCount": 14
+    },
+    {
+      "id": "розовое-вино",
+      "name": "Розовое вино",
+      "subtitle": "",
+      "icon": "wine_bar",
+      "order": 3,
+      "dishCount": 1
     },
     {
       "id": "хлеб",
@@ -87,20 +103,20 @@
       "dishCount": 3
     },
     {
-      "id": "розовое-вино",
-      "name": "Розовое вино",
+      "id": "кофе",
+      "name": "Кофе",
       "subtitle": "",
-      "icon": "restaurant",
-      "order": 3,
-      "dishCount": 1
+      "icon": "coffee",
+      "order": 4,
+      "dishCount": 8
     },
     {
-      "id": "лимонады",
-      "name": "Лимонады",
+      "id": "разливное-пиво",
+      "name": "Разливное пиво",
       "subtitle": "",
-      "icon": "restaurant",
-      "order": 3,
-      "dishCount": 14
+      "icon": "sports_bar",
+      "order": 4,
+      "dishCount": 6
     },
     {
       "id": "телятина",
@@ -111,20 +127,28 @@
       "dishCount": 3
     },
     {
-      "id": "разливное-пиво",
-      "name": "Разливное пиво",
+      "id": "new-коктейль",
+      "name": "NEW Коктейль",
       "subtitle": "",
-      "icon": "restaurant",
-      "order": 4,
-      "dishCount": 6
+      "icon": "local_bar",
+      "order": 5,
+      "dishCount": 5
     },
     {
-      "id": "кофе",
-      "name": "Кофе",
+      "id": "авторские-чаи",
+      "name": "Авторские чаи",
       "subtitle": "",
-      "icon": "restaurant",
-      "order": 4,
-      "dishCount": 8
+      "icon": "emoji_food_beverage",
+      "order": 5,
+      "dishCount": 5
+    },
+    {
+      "id": "пиво-бутылочное",
+      "name": "Пиво бутылочное",
+      "subtitle": "",
+      "icon": "sports_bar",
+      "order": 5,
+      "dishCount": 19
     },
     {
       "id": "супы",
@@ -135,27 +159,11 @@
       "dishCount": 10
     },
     {
-      "id": "new-коктейль",
-      "name": "NEW Коктейль",
+      "id": "настойки",
+      "name": "Настойки",
       "subtitle": "",
-      "icon": "restaurant",
-      "order": 5,
-      "dishCount": 9
-    },
-    {
-      "id": "пиво-бутылочное",
-      "name": "Пиво бутылочное",
-      "subtitle": "",
-      "icon": "restaurant",
-      "order": 5,
-      "dishCount": 19
-    },
-    {
-      "id": "авторские-чаи",
-      "name": "Авторские чаи",
-      "subtitle": "",
-      "icon": "restaurant",
-      "order": 5,
+      "icon": "liquor",
+      "order": 6,
       "dishCount": 5
     },
     {
@@ -167,12 +175,12 @@
       "dishCount": 7
     },
     {
-      "id": "настойки",
-      "name": "Настойки",
+      "id": "ликеры",
+      "name": "Ликеры",
       "subtitle": "",
-      "icon": "restaurant",
-      "order": 6,
-      "dishCount": 5
+      "icon": "liquor",
+      "order": 7,
+      "dishCount": 4
     },
     {
       "id": "соуса",
@@ -183,12 +191,12 @@
       "dishCount": 11
     },
     {
-      "id": "ликеры",
-      "name": "Ликеры",
+      "id": "коньяк",
+      "name": "Коньяк",
       "subtitle": "",
-      "icon": "restaurant",
-      "order": 7,
-      "dishCount": 4
+      "icon": "liquor",
+      "order": 8,
+      "dishCount": 2
     },
     {
       "id": "салаты",
@@ -199,12 +207,12 @@
       "dishCount": 25
     },
     {
-      "id": "коньяк",
-      "name": "Коньяк",
+      "id": "игристые-вина",
+      "name": "Игристые вина",
       "subtitle": "",
-      "icon": "restaurant",
-      "order": 8,
-      "dishCount": 2
+      "icon": "wine_bar",
+      "order": 9,
+      "dishCount": 3
     },
     {
       "id": "рыба",
@@ -215,26 +223,10 @@
       "dishCount": 7
     },
     {
-      "id": "игристые-вина",
-      "name": "Игристые вина",
-      "subtitle": "",
-      "icon": "restaurant",
-      "order": 9,
-      "dishCount": 3
-    },
-    {
-      "id": "паста",
-      "name": "Паста",
-      "subtitle": "",
-      "icon": "dinner_dining",
-      "order": 10,
-      "dishCount": 3
-    },
-    {
       "id": "джин",
       "name": "Джин",
       "subtitle": "",
-      "icon": "restaurant",
+      "icon": "liquor",
       "order": 10,
       "dishCount": 4
     },
@@ -242,9 +234,17 @@
       "id": "водка",
       "name": "Водка",
       "subtitle": "",
-      "icon": "restaurant",
+      "icon": "liquor",
       "order": 11,
       "dishCount": 8
+    },
+    {
+      "id": "виски",
+      "name": "Виски",
+      "subtitle": "",
+      "icon": "liquor",
+      "order": 12,
+      "dishCount": 11
     },
     {
       "id": "курочка",
@@ -255,12 +255,12 @@
       "dishCount": 4
     },
     {
-      "id": "виски",
-      "name": "Виски",
+      "id": "вино-по-бокалам",
+      "name": "Вино по Бокалам",
       "subtitle": "",
-      "icon": "restaurant",
-      "order": 12,
-      "dishCount": 11
+      "icon": "wine_bar",
+      "order": 13,
+      "dishCount": 4
     },
     {
       "id": "колбаски",
@@ -271,12 +271,12 @@
       "dishCount": 7
     },
     {
-      "id": "вино-по-бокалам",
-      "name": "Вино по Бокалам",
+      "id": "вино-красное",
+      "name": "Вино красное",
       "subtitle": "",
-      "icon": "restaurant",
-      "order": 13,
-      "dishCount": 4
+      "icon": "wine_bar",
+      "order": 14,
+      "dishCount": 6
     },
     {
       "id": "закуски-к-пиву",
@@ -287,12 +287,12 @@
       "dishCount": 11
     },
     {
-      "id": "вино-красное",
-      "name": "Вино красное",
+      "id": "бренди",
+      "name": "Бренди",
       "subtitle": "",
-      "icon": "restaurant",
-      "order": 14,
-      "dishCount": 6
+      "icon": "liquor",
+      "order": 15,
+      "dishCount": 4
     },
     {
       "id": "десерты",
@@ -303,12 +303,12 @@
       "dishCount": 4
     },
     {
-      "id": "бренди",
-      "name": "Бренди",
+      "id": "белое-вино",
+      "name": "Белое Вино",
       "subtitle": "",
-      "icon": "restaurant",
-      "order": 15,
-      "dishCount": 4
+      "icon": "wine_bar",
+      "order": 16,
+      "dishCount": 8
     },
     {
       "id": "горячие-закуски",
@@ -319,34 +319,26 @@
       "dishCount": 15
     },
     {
-      "id": "белое-вино",
-      "name": "Белое Вино",
-      "subtitle": "",
-      "icon": "restaurant",
-      "order": 16,
-      "dishCount": 8
-    },
-    {
       "id": "апперетивы-и-вермуты",
       "name": "Апперетивы и вермуты",
       "subtitle": "",
-      "icon": "restaurant",
+      "icon": "liquor",
       "order": 17,
       "dishCount": 4
+    },
+    {
+      "id": "алкогольные-коктейли",
+      "name": "Алкогольные коктейли",
+      "subtitle": "",
+      "icon": "local_bar",
+      "order": 18,
+      "dishCount": 11
     },
     {
       "id": "гарниры",
       "name": "Гарниры",
       "subtitle": "",
       "icon": "rice_bowl",
-      "order": 18,
-      "dishCount": 11
-    },
-    {
-      "id": "алкогольные-коктейли",
-      "name": "Алкогольные коктейли",
-      "subtitle": "",
-      "icon": "restaurant",
       "order": 18,
       "dishCount": 11
     },
@@ -381,6 +373,14 @@
       "icon": "outdoor_grill",
       "order": 23,
       "dishCount": 5
+    },
+    {
+      "id": "паста",
+      "name": "Паста",
+      "subtitle": "",
+      "icon": "dinner_dining",
+      "order": 28,
+      "dishCount": 3
     }
   ],
   "dishes": [
@@ -445,24 +445,6 @@
       "shortName": "Apernova (Апероль солнце)",
       "description": "",
       "price": 80000,
-      "image": "",
-      "rating": 0,
-      "calories": 0.0,
-      "protein": 0.0,
-      "carbs": 0.0,
-      "ingredients": [],
-      "badges": [],
-      "tags": [],
-      "reviews": [],
-      "_t": {}
-    },
-    {
-      "id": "ede542f8-a59b-404f-8935-7f14baf6c22e",
-      "category": "new-коктейль",
-      "name": "Apernova (Апероль солнце) -20%",
-      "shortName": "Apernova (Апероль солнце) -20%",
-      "description": "",
-      "price": 47200,
       "image": "",
       "rating": 0,
       "calories": 0.0,
@@ -1021,24 +1003,6 @@
       "shortName": "CocoLush (Райское наслаждение)",
       "description": "",
       "price": 85000,
-      "image": "",
-      "rating": 0,
-      "calories": 0.0,
-      "protein": 0.0,
-      "carbs": 0.0,
-      "ingredients": [],
-      "badges": [],
-      "tags": [],
-      "reviews": [],
-      "_t": {}
-    },
-    {
-      "id": "f8eb1031-dcbe-495a-8dec-19f6921b7922",
-      "category": "new-коктейль",
-      "name": "CocoLush (Райское наслаждение) -20%",
-      "shortName": "CocoLush (Райское наслаждение) -20%",
-      "description": "",
-      "price": 47200,
       "image": "",
       "rating": 0,
       "calories": 0.0,
@@ -2293,48 +2257,12 @@
       "_t": {}
     },
     {
-      "id": "63dd38b3-ee5d-4060-8dd4-fd1113cd1b8a",
-      "category": "new-коктейль",
-      "name": "Shishi (Свит шишка) -20%",
-      "shortName": "Shishi (Свит шишка) -20%",
-      "description": "",
-      "price": 47200,
-      "image": "",
-      "rating": 0,
-      "calories": 0.0,
-      "protein": 0.0,
-      "carbs": 0.0,
-      "ingredients": [],
-      "badges": [],
-      "tags": [],
-      "reviews": [],
-      "_t": {}
-    },
-    {
       "id": "eed0b09e-cbfa-41ed-b258-7dbded47f99b",
       "category": "new-коктейль",
       "name": "Sparkle (Солнце пустыни)",
       "shortName": "Sparkle (Солнце пустыни)",
       "description": "",
       "price": 70000,
-      "image": "",
-      "rating": 0,
-      "calories": 0.0,
-      "protein": 0.0,
-      "carbs": 0.0,
-      "ingredients": [],
-      "badges": [],
-      "tags": [],
-      "reviews": [],
-      "_t": {}
-    },
-    {
-      "id": "69e8d7eb-cf89-4dd5-ace8-a55f7e7aecb5",
-      "category": "new-коктейль",
-      "name": "Sparkle (Солнце пустыни) -20%",
-      "shortName": "Sparkle (Солнце пустыни) -20%",
-      "description": "",
-      "price": 31200,
       "image": "",
       "rating": 0,
       "calories": 0.0,
@@ -6542,52 +6470,52 @@
     }
   ],
   "categoryImages": {
-    "шашлыки": "https://ce6e1bcc-e329-4500-b965-54d06a22bcc8.selstorage.ru/6574578/e4e45696-6b90-4d33-b626-ffe4e826451a.jpg",
+    "закуски-к-пиву": "https://ce6e1bcc-e329-4500-b965-54d06a22bcc8.selstorage.ru/6574578/0a59adff-0782-4bc8-9de8-6676929546fd.jpg",
     "текила": "",
     "чай": "",
-    "закуски-к-пиву": "https://ce6e1bcc-e329-4500-b965-54d06a22bcc8.selstorage.ru/6574578/0a59adff-0782-4bc8-9de8-6676929546fd.jpg",
-    "холодные-супы": "",
-    "сидр": "",
+    "шашлыки": "https://ce6e1bcc-e329-4500-b965-54d06a22bcc8.selstorage.ru/6574578/e4e45696-6b90-4d33-b626-ffe4e826451a.jpg",
     "прохладительные-напитки": "",
-    "холодные-закуски": "https://ce6e1bcc-e329-4500-b965-54d06a22bcc8.selstorage.ru/6574578/4cf9fc64-cec9-41e8-b371-f3eaf58c7161.jpg",
+    "сидр": "",
+    "холодные-супы": "",
     "ром": "",
-    "хлеб": "https://ce6e1bcc-e329-4500-b965-54d06a22bcc8.selstorage.ru/6574578/491af9a4-cf67-4bbd-881d-4fbf62508281.jpg",
-    "розовое-вино": "",
+    "холодные-закуски": "https://ce6e1bcc-e329-4500-b965-54d06a22bcc8.selstorage.ru/6574578/4cf9fc64-cec9-41e8-b371-f3eaf58c7161.jpg",
     "лимонады": "",
-    "телятина": "https://ce6e1bcc-e329-4500-b965-54d06a22bcc8.selstorage.ru/6574578/1dd95e1a-2325-41df-b9ca-be2e97bf6e36.jpg",
-    "разливное-пиво": "",
+    "розовое-вино": "",
+    "хлеб": "https://ce6e1bcc-e329-4500-b965-54d06a22bcc8.selstorage.ru/6574578/491af9a4-cf67-4bbd-881d-4fbf62508281.jpg",
     "кофе": "",
-    "супы": "https://ce6e1bcc-e329-4500-b965-54d06a22bcc8.selstorage.ru/6574578/ef0d19d6-c0da-4834-b7fa-e292f127c0ab.jpg",
+    "разливное-пиво": "",
+    "телятина": "https://ce6e1bcc-e329-4500-b965-54d06a22bcc8.selstorage.ru/6574578/1dd95e1a-2325-41df-b9ca-be2e97bf6e36.jpg",
     "new-коктейль": "",
-    "пиво-бутылочное": "",
     "авторские-чаи": "",
-    "стейк": "https://ce6e1bcc-e329-4500-b965-54d06a22bcc8.selstorage.ru/6574578/bd320099-03f4-49f8-828a-204052ec533a.jpg",
+    "пиво-бутылочное": "",
+    "супы": "https://ce6e1bcc-e329-4500-b965-54d06a22bcc8.selstorage.ru/6574578/ef0d19d6-c0da-4834-b7fa-e292f127c0ab.jpg",
     "настойки": "",
-    "соуса": "",
+    "стейк": "https://ce6e1bcc-e329-4500-b965-54d06a22bcc8.selstorage.ru/6574578/bd320099-03f4-49f8-828a-204052ec533a.jpg",
     "ликеры": "",
-    "салаты": "https://ce6e1bcc-e329-4500-b965-54d06a22bcc8.selstorage.ru/6574578/fe2516c6-4160-4320-9e18-f0a2d2d7b677.jpg",
+    "соуса": "",
     "коньяк": "",
-    "рыба": "https://ce6e1bcc-e329-4500-b965-54d06a22bcc8.selstorage.ru/6574578/50c8b37b-f838-4e38-bc47-c7e5a39d2a4b.jpg",
+    "салаты": "https://ce6e1bcc-e329-4500-b965-54d06a22bcc8.selstorage.ru/6574578/fe2516c6-4160-4320-9e18-f0a2d2d7b677.jpg",
     "игристые-вина": "",
-    "паста": "",
+    "рыба": "https://ce6e1bcc-e329-4500-b965-54d06a22bcc8.selstorage.ru/6574578/50c8b37b-f838-4e38-bc47-c7e5a39d2a4b.jpg",
     "джин": "",
     "водка": "",
-    "курочка": "https://ce6e1bcc-e329-4500-b965-54d06a22bcc8.selstorage.ru/6574578/19204bec-c429-41ae-a826-63bd34d3b5ce.jpg",
     "виски": "",
-    "колбаски": "https://ce6e1bcc-e329-4500-b965-54d06a22bcc8.selstorage.ru/6574578/17ad39a5-244b-4962-89fc-c3efcc4910dd.jpg",
+    "курочка": "https://ce6e1bcc-e329-4500-b965-54d06a22bcc8.selstorage.ru/6574578/19204bec-c429-41ae-a826-63bd34d3b5ce.jpg",
     "вино-по-бокалам": "",
+    "колбаски": "https://ce6e1bcc-e329-4500-b965-54d06a22bcc8.selstorage.ru/6574578/17ad39a5-244b-4962-89fc-c3efcc4910dd.jpg",
     "вино-красное": "",
-    "десерты": "https://ce6e1bcc-e329-4500-b965-54d06a22bcc8.selstorage.ru/6574578/68afe2bf-e836-4aa5-a045-22859245b237.jpg",
     "бренди": "",
-    "горячие-закуски": "https://ce6e1bcc-e329-4500-b965-54d06a22bcc8.selstorage.ru/6574578/95ddd6df-d242-4bbe-b343-023b1454c4e4.jpg",
+    "десерты": "https://ce6e1bcc-e329-4500-b965-54d06a22bcc8.selstorage.ru/6574578/68afe2bf-e836-4aa5-a045-22859245b237.jpg",
     "белое-вино": "",
+    "горячие-закуски": "https://ce6e1bcc-e329-4500-b965-54d06a22bcc8.selstorage.ru/6574578/95ddd6df-d242-4bbe-b343-023b1454c4e4.jpg",
     "апперетивы-и-вермуты": "",
-    "гарниры": "",
     "алкогольные-коктейли": "",
+    "гарниры": "",
     "брускетты": "https://ce6e1bcc-e329-4500-b965-54d06a22bcc8.selstorage.ru/6574578/7c0159fd-0296-4214-9840-1b02b5738022.jpg",
     "баранина": "https://ce6e1bcc-e329-4500-b965-54d06a22bcc8.selstorage.ru/6574578/9214b2fc-6acd-421b-97dc-1ae76143e890.jpg",
     "wok": "https://ce6e1bcc-e329-4500-b965-54d06a22bcc8.selstorage.ru/6574578/d9853cd5-114d-4998-bdaf-6f421929de8c.jpg",
-    "bbq": ""
+    "bbq": "",
+    "паста": ""
   },
   "_source": "iiko-cached",
   "_revision": 1775795997599
