@@ -1,0 +1,215 @@
+{
+  "parentCategories": {
+    "15d48ef2-9954-4f84-a125-33f177f5d8d8": {
+      "id": "kitchen",
+      "name": "Кухня",
+      "icon": "restaurant",
+      "order": 1
+    },
+    "fea1f3b8-0851-4b92-a101-46059d874af1": {
+      "id": "bar",
+      "name": "Бар",
+      "icon": "local_bar",
+      "order": 2
+    },
+    "fdd3cb84-7700-422a-a910-799eb9bd7caf": {
+      "id": "alcohol",
+      "name": "Алкоголь",
+      "icon": "wine_bar",
+      "order": 3
+    },
+    "1ee2d37c-55f8-4ade-9218-ed23aaa2bcb3": {
+      "id": "drinks",
+      "name": "Напитки",
+      "icon": "local_cafe",
+      "order": 4
+    }
+  },
+  "categories": {
+    "8fcac2bb-02dd-4852-a397-7fccf5d3bff2": {
+      "cleanName": "Гарниры",
+      "order": 18
+    },
+    "b8baf96f-fdc0-4eb3-b0d4-3cf1f4edc69a": {
+      "cleanName": "BBQ",
+      "order": 23
+    },
+    "01666374-2b41-45d2-aa30-7ad25fa7cce4": {
+      "cleanName": "Чай",
+      "order": 0
+    },
+    "c0b3fb1a-5fb7-441f-99b4-ab20514b6f03": {
+      "cleanName": "Авторские чаи",
+      "order": 5
+    },
+    "4ba7c0eb-16a8-4c06-9c56-adad63d69253": {
+      "cleanName": "Вино красное",
+      "order": 14
+    },
+    "d80b71f6-1d7e-4b3c-895c-78f5431249d2": {
+      "cleanName": "Настойки",
+      "order": 6
+    },
+    "7376de54-7f08-4408-8511-b2833a8d7e78": {
+      "cleanName": "Колбаски",
+      "order": 13
+    },
+    "c6f9dc6b-02da-4aad-885e-15656987753d": {
+      "cleanName": "Разливное пиво",
+      "order": 4
+    },
+    "e4cee094-f717-40ac-9615-076408aea681": {
+      "cleanName": "Лимонады",
+      "order": 3
+    },
+    "b6403a5c-eb93-4ff2-a305-1614a2147b13": {
+      "cleanName": "Апперетивы и вермуты",
+      "order": 17
+    },
+    "92723c82-a544-4179-b2a5-e019e3f4b38c": {
+      "cleanName": "Холодные супы",
+      "order": 1
+    },
+    "056cca54-916b-4751-b2d2-02420b0f3aa4": {
+      "cleanName": "Розовое вино",
+      "order": 3
+    },
+    "6b60c33f-78fa-4d74-876b-79568c64916c": {
+      "cleanName": "Сидр",
+      "order": 1
+    },
+    "416225af-960c-4d25-bb7b-c236e4c8a51e": {
+      "cleanName": "Кофе",
+      "order": 4
+    },
+    "975013f4-571f-4cac-824c-f1642a46073a": {
+      "cleanName": "Бренди",
+      "order": 15
+    },
+    "f59839f6-10f1-4165-b00e-1c65dc85aa8c": {
+      "cleanName": "Телятина",
+      "order": 4
+    },
+    "a9cf8a6d-96dd-467d-b18d-fbf4b1043f68": {
+      "cleanName": "Рыба",
+      "order": 9
+    },
+    "6a19b011-5b37-417d-beab-3c408c7206ed": {
+      "cleanName": "Горячие закуски",
+      "order": 16
+    },
+    "2cd52e9a-b237-443a-8bfd-6fc79e76f003": {
+      "cleanName": "Баранина",
+      "order": 20
+    },
+    "11dae65d-4721-4367-ad4e-fdbc0938d231": {
+      "cleanName": "Соуса",
+      "order": 7
+    },
+    "9ca8c875-54a5-4893-b6df-eb73b71c77ea": {
+      "cleanName": "Холодные закуски",
+      "order": 2
+    },
+    "2136fe34-2d9d-4af3-ac94-e6ac630c0955": {
+      "cleanName": "Вино по Бокалам",
+      "order": 13
+    },
+    "04c6bfaa-abfb-45e7-a579-54038c67042e": {
+      "cleanName": "Брускетты",
+      "order": 19
+    },
+    "768b3aa4-ded9-42dd-9fec-002369592b03": {
+      "cleanName": "Ром",
+      "order": 2
+    },
+    "e6572380-1c43-4f28-96ec-08022e64ba5c": {
+      "cleanName": "Виски",
+      "order": 12
+    },
+    "7823f179-c808-46b6-b026-57f331eb8e2a": {
+      "cleanName": "NEW Коктейль",
+      "order": 5
+    },
+    "f09b5b91-8f9e-40d1-b457-1827f0f0c4c3": {
+      "cleanName": "Водка",
+      "order": 11
+    },
+    "c483a807-eff3-437f-a4df-b95fbf267be1": {
+      "cleanName": "Стейк",
+      "order": 6
+    },
+    "d05923a3-4f4f-4bdf-9476-661c8e714167": {
+      "cleanName": "Коньяк",
+      "order": 8
+    },
+    "e4a23496-1150-4f7d-9abe-4d0398dc567e": {
+      "cleanName": "Закуски к пиву",
+      "order": 14
+    },
+    "f6888649-a1e8-4aeb-a537-ad8afdf8f5af": {
+      "cleanName": "Хлеб",
+      "order": 3
+    },
+    "4e1c109a-1887-45f3-8fc7-88b3a83d91b5": {
+      "cleanName": "Текила",
+      "order": 0
+    },
+    "b3295fdc-174d-45af-9309-65a69b89e8d3": {
+      "cleanName": "Курочка",
+      "order": 12
+    },
+    "57490972-52be-436c-9ddd-b041e73cf044": {
+      "cleanName": "Пиво бутылочное",
+      "order": 5
+    },
+    "4da4a1de-bcad-4bc2-920d-8b72bbeb674d": {
+      "cleanName": "Супы",
+      "order": 5
+    },
+    "f580a31a-9193-4d7c-b365-252a9c4d303d": {
+      "cleanName": "Игристые вина",
+      "order": 9
+    },
+    "fd8c788c-4ee6-4ae4-b117-66b1df7caf52": {
+      "cleanName": "Ликеры",
+      "order": 7
+    },
+    "7417c877-b5f8-4fb8-95a8-e8a4d5682cb6": {
+      "cleanName": "Десерты",
+      "order": 15
+    },
+    "3fca878e-cc33-444a-b08b-21b14927286a": {
+      "cleanName": "Джин",
+      "order": 10
+    },
+    "85725092-8ac0-4545-99c4-04116f9e2783": {
+      "cleanName": "Закуски к пиву",
+      "order": 0
+    },
+    "4a99ed30-f740-404b-a8ba-7a116b41fd48": {
+      "cleanName": "Салаты",
+      "order": 8
+    },
+    "d938d343-db9c-4498-bd48-9fa10438a6ea": {
+      "cleanName": "Прохладительные напитки",
+      "order": 1
+    },
+    "74e9bcac-1dec-4534-988c-c752be66ab05": {
+      "cleanName": "Шашлыки",
+      "order": 0
+    },
+    "a01a8118-cbb7-48e1-ad6a-3e96fe75f62c": {
+      "cleanName": "Белое Вино",
+      "order": 16
+    },
+    "715a4da8-3400-46c6-b0e4-2011880276b1": {
+      "cleanName": "Алкогольные коктейли",
+      "order": 18
+    },
+    "252d8c63-62b5-47bf-bbee-6716c6942a7d": {
+      "cleanName": "WOK",
+      "order": 22
+    }
+  },
+  "dishes": {}
+}

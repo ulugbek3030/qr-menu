@@ -1,0 +1,12 @@
+{
+  "name": "qr-menu",
+  "version": "2.0.0",
+  "description": "QR Menu for Shishka Bar — synced with iiko",
+  "scripts": {
+    "dev": "vercel dev",
+    "serve": "npx serve -l 3456 -s ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

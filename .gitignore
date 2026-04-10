@@ -3,3 +3,6 @@ node_modules/
 package-lock.json
 .claude/
 designs/
+.env
+.vercel/
+iiko_menu_raw.json

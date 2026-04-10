@@ -16,12 +16,26 @@ let menuData = null;
 let prevView = null;
 let router = null;
 
+// Menu API URL — uses Vercel API if available, falls back to static JSON
+const API_BASE = location.hostname === 'localhost' || location.hostname === '127.0.0.1'
+  ? '' : ''; // Same origin on Vercel; override for cross-origin if needed
+
 async function loadData() {
   try {
-    const res = await fetch('data/menu.json');
-    if (!res.ok) throw new Error('Failed to load menu');
-    menuData = await res.json();
-    document.getElementById('header-logo').src = menuData.restaurant.logo;
+    // Try API first (iiko sync)
+    const apiRes = await fetch(`${API_BASE}/api/menu`).catch(() => null);
+    if (apiRes && apiRes.ok) {
+      menuData = await apiRes.json();
+      console.log(`Menu loaded from iiko (source: ${menuData._source}, rev: ${menuData._revision})`);
+    } else {
+      // Fallback to static JSON
+      const res = await fetch('data/menu.json');
+      if (!res.ok) throw new Error('Failed to load menu');
+      menuData = await res.json();
+      console.log('Menu loaded from static JSON (fallback)');
+    }
+    const logo = document.getElementById('header-logo');
+    if (menuData.restaurant.logo) logo.src = menuData.restaurant.logo;
   } catch (e) {
     document.getElementById('app').innerHTML = `
       <div class="px-5 py-20 text-center">
@@ -33,6 +47,25 @@ async function loadData() {
     throw e;
   }
 }
+
+// Stop-list polling
+let stoppedIds = new Set();
+async function pollStopList() {
+  try {
+    const res = await fetch(`${API_BASE}/api/stop-list`);
+    if (res.ok) {
+      const data = await res.json();
+      stoppedIds = new Set(data.stoppedIds || []);
+      // Mark dishes as stopped
+      if (menuData) {
+        for (const dish of menuData.dishes) {
+          dish.isStopped = stoppedIds.has(dish.id);
+        }
+      }
+    }
+  } catch { /* silent */ }
+}
+export function getStoppedIds() { return stoppedIds; }
 
 function cleanup() {
   if (prevView === 'dish') cleanupDish();
@@ -178,13 +211,16 @@ async function init() {
     router.resolve();
   });
 
+  // Start stop-list polling (every 60s)
+  pollStopList();
+  setInterval(pollStopList, 60000);
+
   // If user is logged in, restore their language and go to menu
   if (auth.isLoggedIn()) {
     const user = auth.getUser();
     if (user.lang) setLang(user.lang);
     router.resolve();
   } else {
-    // Show welcome/registration screen
     showWelcome();
   }
 }
